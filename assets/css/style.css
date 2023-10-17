@@ -84,44 +84,51 @@
 }
 
 .span_header_text {
-    color: #ff7230;
+    color: #f7601a;
 }
 
 .hire_me {
-    width: 160px;
-    height: 40px;
-    background-color: #ff7230;
+    /* width: 160px; */
+    padding: 0.5rem 2rem;
+    /* height: 40px; */
+    background-color: #000000;
+    border: 0.1em solid #020202;
     color: #fff;
     text-transform: capitalize;
     outline: none;
-    font-size: 20px;
+    font-size: 1.5em;
+    /* border-radius: 35px; */
     border: none;
-    transition: all 0.3s linear;
+    /* transition: all 0.3s linear; */
+    font-weight: bold;
 }
 
 .about_me {
-    width: 160px;
-    height: 40px;
-    background-color: #fff;
-    ;
-    color: #ff7230;
-    text-transform: capitalize;
-    outline: none;
-    font-size: 20px;
-    border: #ff7230 2px solid;
-    transition: all 0.3s linear;
+  /* width: 160px; */
+  padding: 0.5rem 2rem;
+  /* height: 40px; */
+  background-color: fff;
+  color: #ff7230;
+  border: 0.1em solid #ff7230;
+  text-transform: capitalize;
+  outline: none;
+  font-size: 1.5em;
+  /* border-radius: 35px; */
+
+  /* transition: all 0.3s linear; */
+  font-weight: bold;
 }
 
 .hire_me:hover {
     background-color: #fff;
-    color: #ff7230;
-    border: #ff7230 2px solid;
+    color: #000000;
+    border: #000000 2px solid;
 }
 
 .about_me:hover {
     background-color: #ff7230;
     color: #fff;
-    border: none;
+
 }
 
 .header_mail p {
