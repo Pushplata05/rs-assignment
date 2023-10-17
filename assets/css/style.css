@@ -107,7 +107,7 @@
   /* width: 160px; */
   padding: 0.5rem 2rem;
   /* height: 40px; */
-  background-color: fff;
+  background-color: #fff;
   color: #ff7230;
   border: 0.1em solid #ff7230;
   text-transform: capitalize;
@@ -425,9 +425,9 @@ footer p{
     .contact_resp{
         margin: 0 !important;
     }
-    .frame_resp {
+    /* .frame_resp {
       width: 100%;
-    }
+    } */
     .common_div{
         text-align: center;
         justify-content: center;
