@@ -1,69 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to create a website using HTML and CSS</title>
-<link rel="stylesheet" href="asset/style.css">
+   <title>Home</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/fontawesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+   <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+   <link rel="stylesheet" href="./assets/Fonts/Proxima-Nova-Font/">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   <style></style>
 </head>
+
 <body>
-<header>
-    <nav class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news" class="screen-reader-text
-        ">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-</header>
-<main>
-<section id="intro">
-<div class="Container">
-    
-<img src="asset/assets/profile.jpg" alt="display picture of doggo">
-<h2>My name is  Designer</h2>
-</div>    <div class="block" id="screen-reader-text">
-    <img src="../../img/IMG_0123.jpg" alt="My cat" width="200" height="192" class="screen-reader-text">
-    <p><a href="#screen-reader-text"  class="screen-reader-text">My awesome website</a></p>
-    <div class="screen-reader-text">
-        <p>Can you see me, can you hear me?</p>
+   <!-- navbar started -->
+   <header class="container-fluid nav-style mx-auto">
+      <div class="row">
+         <div class="col-md-10 col-11 mx-auto">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./assets/img/logo1.jpg" class="img-fluid"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-link">
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+   </header>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="row">
+               <div class="col-md-6 col-12 order-2 order-md-1">
+                  <p class="header_text">Hi Dear,<br />
+                     Design, Build & Grow
+                     your Business
+                     <span class="span_header_text">with Infostride</span><br />
+                     Lorem ipsum dolor sit amet, consectetur adipiscing<span class="span_header_text">elit,</span>
+                     <br />
+                  </p>
+                  <p class="header_text2">fgdfdfdf<br />
+                     Design, Build & Grow
+                     your Business
+                     <span class="span_header_text">with Infostride</span><br />
+                     Lorem ipsum dolor sit amet, consectetur adipiscing<span class="span_header_text">elit,</span>
+                     <br />
+                  </p>
+                  <div class="d-flex justify-content-around">
+                     <div>
+                        <button class="hire_me"><i class="fas fa-check"></i>Hire Me</button>
+                     </div>
+                     <div class="">
+                        <button class="about_me"><i class="fa fa-user"></i>About me</button>
+                     </div>
+                  </div>
+                  <div class="text-center header_mail">
+                     <p class="fw-bold header_email_para">
+                        Email
+                     </p>
+                     <p>test@gmail.com </p>
+
+                  </div>
+               </div>
+               <div class="col-md-6 col-12  order-1">
+                  <div class="float-right">
+                     <figure >
+                        <img src="./assets/img/Frame (1).png" class="image-fluid frame_resp">
+                     </figure>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- <-about-part-start> -->
+   <div class="container-fluid about_sec bg-light" id="about_id">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="main_title">
+               <h1>About Me</h1>
+
+            </div>
+            <div class="row">
+               <div class="col-md-5 col-11 
+               
+               ">
+                  <figure>
+                     <img src="./assets/img/Group 91.png" class="image-fluid frame_resp">
+                  </figure>
+               </div>
+               <div class="col-md-7 col-11 about_text d-flex justify-content-center align-items-start flex-column">
+                  <p>
+                     hello
+                  </p>
+                  <h1>I am a passionate designer</h1>
+                  <p>
+                     I am a passionate designer. I am a passionate designer. I am a passionate designer
+                  </p>
+
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- work exp -->
+   <div class="container-fluid expert_sec" id="about_id">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="main_title">
+               <h1>Work-Expertise</h1>
+               <p class="text-center"> I am a passionate designer. I am a passionate designer. I am a passionate
+                  designer</p>
+
+            </div>
+            <div class="row">
+
+               <div class="common_div col-md-7 col-11 about_text d-flex  align-items-start flex-column">
+                  <div class="w-100">
+                     <h2 class="expert_h1">Photoshop </h2>
+                     <div class="progress">
+                        <div class="progress-bar pb_1" role="progressbar"></div>
+                     </div>
+                  </div>
+                  <div class="w-100 my-5">
+                     <h2 class="expert_h2">Ilustrator </h2>
+                     <div class="progress">
+                        <div class="progress-bar pb_2" role="progressbar"></div>
+                     </div>
+                  </div>
+                  <div class="w-100 ">
+                     <h2 class="expert_h3">Branding </h2>
+                     <div class="progress">
+                        <div class="progress-bar pb_3" role="progressbar"></div>
+                     </div>
+                  </div>
+
+
+               </div>
+               <div class="col-md-5 col-11">
+                  <figure class="float-md-right text-center common_div">
+                     <img src="./assets/img/Group 91.png" class="image-fluid frame_resp common_div ">
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- <-our-services> -->
+   <div class="container-fluid ourservices bg-light" id="about_id">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="main_title">
+               <h1>Our-Services</h1>
+               <p class="text-center">Our-Services provide<span class="font-weight-bold">Quality</span></p>
+            </div>
+            <div class="row justify-content-around mt-5 gy-5">
+               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
+                  <div class="heart_at_bottom">
+                     <h1>1</h1>
+                     <ul>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Logo
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Business card
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Letterhead
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Branding Stationary
+                        </li>
+                     </ul>
+                  </div>
+                  <i class="far fa-heart fa-4x"></i>
+               </div>
+               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
+                  <div class="heart_at_bottom">
+                     <h1>1</h1>
+                     <ul>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Logo
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Business card
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Letterhead
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Branding Stationary
+                        </li>
+                     </ul>
+                  </div>
+                  <i class="far fa-heart fa-4x"></i>
+               </div>
+               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
+                  <div class="heart_at_bottom">
+                     <h1>1</h1>
+                     <ul>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Logo
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Business card
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Letterhead
+                        </li>
+                        <li>
+                           <sapn><img src="./assets/img/circled-dot.png" class="img-fluid service_list_icon">Branding Stationary
+                        </li>
+                     </ul>
+                  </div>
+                  <i class="far fa-heart fa-4x"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+     <!-- <-hire-me Section> -->
+      <div class="hireme_section container-fluid">
+         <div class="row">
+            <div class="col-md-10 col-11  mx-auto">
+               <h1>
+                  Hi Dear,
+               </h1><br/>
+               <p>Design, Build & Grow your Business with Infostride
+                  Lorem ipsum dolor sit amet, consectetur adipiscingelit,</p><br/>
+               <h3>adipiscingelit</h3>
+            
+            <button class="hire_me"><i class="fa fa-check"></i>Hire Me</button>
+
+         </div></div>
+
+      </div>
+<!-- <-contact-> -->
+<div class="container-fluid contactme_sec bg-light" id="about_id">
+   <div class="row">
+      <div class="col-11 col-md-10 mx-auto">
+         <div class="main_title">
+            <h1>Contact me</h1>
+            <p class="text-center">Feel free to<span class="font-weight-bold">Contact</span></p>
+         </div>
+         <div class="row  mt-5 gy-5 contact_resp">
+           <div class="col-md-3 col-10 contact_img">
+<figure>
+   <img src="./assets/img/Group 91.png" class="img-fluid">
+</figure>
+           </div>
+           <div class="col-md-6 col-10 contact_inner">
+<form>
+   <div class="mb-3">
+   
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Type your name">
     </div>
+    <div class="mb-3">
+      
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Type your mobile">
+    </div>
+    <div class="mb-3">
+  
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Type your mail">
+    </div>
+    <div class="mb-3">
+      
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type your message"></textarea> 
+    </div>
+    <div class="text-center">
+      <button class="hire_me" type="submit">submit</button>
+   </div>
+</form>
+           </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- <---------------------contact enquery---------------> 
+<div class="container-fluid mt-5">
+<div class="row">
+   <div class="col-11 col-md-10 mx-auto">
+      <div class="row justify-content-around">
+         <div class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
+           <p><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></p> 
+           <br/>
+           <p class="fw-bold">test@gmail.com</p>
+         </div>
+         <div class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
+            <p><i class="fab fa-2x fa-whatsapp" aria-hidden="true"></i></p> 
+            <br/>
+            <p class="fw-bold">+91 121212 21212</p>
+          </div>
+   
+          <div class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
+            <p><i class="fa 2px fa-map-marker" aria-hidden="true"></i></p> 
+            <br/>
+            <p class="fw-bold">City</p>
+          </div>
+
+      </div>
+   </div>
 </div>
 
-</section>
-
-<section id="about">
-<div class="container">
-    <p>
-        If you want to know more about the position
-           <a href="open-position.html"
-                aria-label="Description and requirements for the fullstack developer open
-                position">
-               click here
-           </a>.
-       </p>
 </div>
+<section class="my-5">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-lg-1 col-2 socialsites_links">
+            <i class="fab fa-facebook-f fa-2x"></i>
+         </div>
+         <div class="col-lg-1 col-2 socialsites_links">
+            <i class="fab fa-2x fa-instagram"aria-hidden="true"></i>
+         </div>
+   
+         <div class="col-lg-1 col-2 socialsites_links">
+            <i class="fab fa-2x fa-pinterest"aria-hidden="true"></i>
+         </div>
+         <div class="col-lg-1 col-2 socialsites_links">
+            <i class="fab fa-2x fa-behance"aria-hidden="true"></i>
+         </div>
+
+      </div>
+
+   </div>
+
 </section>
-
-<section id="contact">
-<div class="container">
-<h1>Contact me</h1>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, laudantium.</p>
-<ul>
-<li>Email ID</li>
-<li>Insta ID</li>
-<li>Facebook ID</li>
-</ul>
-</div>
-</section>
-
-</main>
-
 <footer>
-<p>© Copyright 2022 page  Co LTd.</p>
+   <div class="text-center my-2">
+<p>copy@ all reserved rights</p>
+   </div>
 </footer>
+
+
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src="./assets/js/script.js"></script>
+   <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </body>
+
 </html>
