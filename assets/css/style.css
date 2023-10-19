@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
+ 
 }
 
 /* header {
@@ -28,6 +28,7 @@
     letter-spacing: 2px;
     color: #333;
     position: relative;
+    font-family: 'Zilla Slab', serif;
 
 
 }
@@ -39,7 +40,7 @@
     bottom: 50%;
     width: 0%;
     height: 3%;
-    background: #ff7230;
+    background: #db3136;
     transition: all 0.3s linear;
 }
 
@@ -48,12 +49,12 @@
 }
 
 .navbar-nav li a:hover {
-    color: #ff7230 !important;
+    color: #db3136 !important;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #ff7230 !important;
+    color: #db3136 !important;
 }
 
 @media(max-width:998px) {
@@ -75,6 +76,7 @@
     font-size: 26px;
     color: #8c8c8c;
     margin-top: 50px;
+    font-family: 'Zilla Slab', serif;
 }
 
 .header_text2 {
@@ -83,9 +85,11 @@
     margin-bottom: 70px;
 }
 
+
+
 .span_header_text {
-    color: #f7601a;
-}
+    color: #0a0a0a;
+}              
 
 .hire_me {
     /* width: 160px; */
@@ -107,9 +111,10 @@
   /* width: 160px; */
   padding: 0.5rem 2rem;
   /* height: 40px; */
+  
   background-color: #fff;
-  color: #ff7230;
-  border: 0.1em solid #ff7230;
+  color: #db3136;
+  border: 0.1em solid #db3136;
   text-transform: capitalize;
   outline: none;
   font-size: 1.5em;
@@ -126,7 +131,7 @@
 }
 
 .about_me:hover {
-    background-color: #ff7230;
+    background-color: #db3136;
     color: #fff;
 
 }
@@ -211,7 +216,7 @@
 .expert_sec .pb_2 {
     width: 93%;
     border-radius: 7px;
-    background-color: #ff7230;
+    background-color: #db3136;
 
 }
 
@@ -276,11 +281,12 @@
 .services_div:hover{
     background-color: #fff;
     box-shadow: 0 0 4px 1px gray ;
+    cursor: pointer;
 }
 .services_div h1{
    text-align: center;
    font-size: 52px;
-   color: #ff7230;
+   color: #db3136;
 position: relative;
 width: 70px;
 height: 70px;
@@ -291,7 +297,7 @@ background: #ffeee6;
 .services_div h1:hover{
   
  background:#fff;
- border: 1px solid #ff7230;
+ border: 1px solid #db3136;
 
  }
  .services_div .service_list_icon{
@@ -339,7 +345,7 @@ background: #ffeee6;
  }
  .hireme_section h1{
     font-size: 40px;
-    color: #ff7230;
+    color: #db3136;
  }
  .hireme_section p{
     font-size: 37px;
@@ -371,7 +377,7 @@ position: relative;
    
   
     background: #ffffff;
-     border: 1px solid #ff7230;
+     border: 1px solid #db3136;
      filter: drop-shadow(2px 0px 8px rgba(0, 0, 0, 18));
     
 }
@@ -395,7 +401,7 @@ position: relative;
  }
 footer{
     line-height: 50px;
-    background-color: #ff7230;
+    background-color: #db3136;
     color: #fff;
     width: 100%;
 }
