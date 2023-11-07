@@ -83,7 +83,7 @@ body{
 
 .header_text {
     font-size: 48px;
-    color: #222;
+    color: #333;
     margin-top: auto;
     font-weight: 700;
     line-height: 60px;
@@ -94,7 +94,14 @@ body{
     color: #2d3436;
     margin-bottom: 70px;
 }
-
+.subscribe {
+    padding: 12px 42px;
+    border: none;
+    background: #ff9549;
+    color: white;
+    font-size: 18px;
+    /* margin-right: 26px; */
+}
 .image-wrapper {
     padding: 40px 0px 0px;
     text-align: center;
@@ -380,6 +387,7 @@ body .accessibility_line {
  
  pointer-events: none;
 }
+
 .hireme_section{
     padding-top: 45px;
     padding-bottom: 45px;
@@ -394,7 +402,7 @@ body .accessibility_line {
  }
  .hireme_section h1{
     font-size: 40px;
-    color: #db3136;
+    color: #333;
  }
  .hireme_section p{
     font-size: 37px;
@@ -406,6 +414,11 @@ body .accessibility_line {
     color: #ffffff;
     margin-top:  -10px;
     padding-bottom: 30px;
+ }
+ .contactme_sec{
+    padding-top: 50px;
+    padding-bottom: 70px;
+
  }
  .contactme_section{
 padding-top: 50px;
