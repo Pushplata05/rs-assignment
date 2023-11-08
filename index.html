@@ -112,8 +112,8 @@
 
                                           <button class="btn ms-4 btn-primary modal-btn grayscale"><iconify-icon
                                                 icon="tdesign:saturation"></iconify-icon>Grayscale</button>
-                                                <button class="btn ms-4 btn-primary modal-btn readingmask"><iconify-icon
-                                                   icon="tdesign:saturation"></iconify-icon>Reading mask</button>
+                                          <button class="btn ms-4 btn-primary modal-btn readingmask"><iconify-icon
+                                                icon="tdesign:saturation"></iconify-icon>Reading mask</button>
                                        </div>
                                     </div>
                                  </div>
@@ -360,24 +360,29 @@
 
                <div class="col-md-6 col-10 contact_inner">
                   <form>
-                     <div class="mb-3">
-                        <label for="firstname">First name:</label>
-                        <input type="text" name="firstname" id="firstname"><br>
-                     </div>
-                     <div class="mb-3">
-                        <label for="firstname">Last name:</label>
-<input type="text" name="firstname" id="firstname"><br>
-                     </div>
-
-                     <div class="mb-3">
-                        <label for="firstname">Type your msg</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                           placeholder="Type your message"></textarea>
-                          
-                     </div>
-                     <div class="text-center">
-                        <button class="hire_me" type="submit">submit</button>
-                     </div>
+                     <fieldset>
+                        <legend>Add a comment</legend>
+                        <p class="instruction"><span class="required">Required fields</span> are in red and marked with
+                           an <span class="required">*</span></p>
+                        <div class="row">
+                           <label for="name5">Name</label>
+                           <input type="text" id="name5" name="name" value="Superbear">
+                        </div>
+                        <div class="row error">
+                           <label class="required" for="email5"> E-mail *</label>
+                           <input type="text" id="email5" name="email" value="superbear@@hq.example.com"
+                              aria-invalid="true" aria-describedby="error_email">
+                        </div>
+                        <div class="row">
+                           <label for="website3">Website</label>
+                           <input type="text" id="website3" name="website">
+                        </div>
+                        <div class="row error">
+                           <label class="required" for="comment3"> Comment *</label>
+                           <textarea name="comment" id="comment3" aria-invalid="true" aria-describedby="error_comment"
+                              spellcheck="false"></textarea>
+                        </div>
+                     </fieldset>
                   </form>
                </div>
                <div class="col-md-3 col-10 contact_img">
