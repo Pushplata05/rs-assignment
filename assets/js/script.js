@@ -2,11 +2,12 @@ var menuObject = {
   "bigger_cursor": false,
 
 };
-
+// ------------------------------modal-btn-1-------------------------------
 let font = 14;
 $(".modal-btn1").on("click", function () {
   console.log("I ma clicked")
   font = font + 5;
+
   console.log(font)
 
   // $("body").css("cursor", "url('https://abs.twimg.com/emoji/v2/72x72/1f525.png') 100 36, auto !important");
@@ -21,30 +22,29 @@ $(".modal-btn1").on("click", function () {
   // const subtitles = document.getElementById("subtitles");
 
 });
+
+// ------------------------------modal-btn-1-end-------------------------------
+
+// ------------------------------modal-btn-2-------------------------------
 $(".modal-btn2").on("click", function () {
   console.log("pushed")
   $("body").css("cursor", "url('assets/img/cursor (1).png') 100 36, auto");
 });
+
+// ------------------------------modal-btn-2-end-------------------------------
+
+// ------------------------------modal-btn-3-------------------------------
 $(".modal-btn3").on("click", function () {
 
   $("img").attr("style", `display: none !important;`);
-  let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  console.log(randomColor)
-  $(':root').get(0).style.setProperty('--primary-color', randomColor, 'important');
+  // let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  // console.log(randomColor)
+  // $(':root').get(0).style.setProperty('--primary-color', randomColor, 'important');
 
-  const subtitles = document.getElementById("subtitles");
-
-});
-
-
-$(".modal-btn4").on("click", function () {
-
-  $("body").css("cursor", "url('https://abs.twimg.com/emoji/v2/72x72/1f525.png') 100 36, auto !important");
+  // const subtitles = document.getElementById("subtitles");
 
 });
-
-
-
+// ------------------------------modal-btn-3-end-------------------------------
 
 // reading-line------------------------------------------------------------------
 $(document).ready(function () {
@@ -66,6 +66,33 @@ $(document).ready(function () {
 
 // reading-line------------------------------------------------------------------
 
+// -------------------------------changefont--------------------------------------
+
+
+
+
+
+$(".changefont").on("click", function () {
+  let fontfamily = "'Zilla Slab', serif"
+  let font = 32;
+
+  $("body").attr("style", `font-family: ${fontfamily} !important; font-size: ${font}px !important;`);
+  $("h1").attr("style", `font-family: ${fontfamily}!important; font-size: ${font}px !important;`);
+  $("p").attr("style", `font-family: ${fontfamily} !important; font-size: ${font}px !important;`);
+
+});
+
+
+
+// ---------------------------------change-fontend-------------
+let brightness = 50;
+$(".brightness").on("click", function () {
+  // filter: brightness(200%);
+ 
+  brightness= brightness+50
+  console.log("pushed", brightness)
+  $("html").attr("style", `filter: brightness(${brightness}%) !important;`);
+});
 
 
 $(document).ready(function () {
