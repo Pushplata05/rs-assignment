@@ -7,9 +7,6 @@ let font = 14;
 $(".modal-btn1").on("click", function () {
   console.log("I ma clicked")
   font = font + 5;
-
-  console.log(font)
-
   // $("body").css("cursor", "url('https://abs.twimg.com/emoji/v2/72x72/1f525.png') 100 36, auto !important");
   $("body").attr("style", `font-size: ${font}px !important; `);
   $("h1").attr("style", `font-size: ${font}px !important;`);
@@ -20,7 +17,6 @@ $(".modal-btn1").on("click", function () {
   //         $(':root').get(0).style.setProperty('--primary-color', randomColor, 'important');
 
   // const subtitles = document.getElementById("subtitles");
-
 });
 
 // ------------------------------modal-btn-1-end-------------------------------
@@ -35,14 +31,7 @@ $(".modal-btn2").on("click", function () {
 
 // ------------------------------modal-btn-3-------------------------------
 $(".modal-btn3").on("click", function () {
-
   $("img").attr("style", `display: none !important;`);
-  // let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  // console.log(randomColor)
-  // $(':root').get(0).style.setProperty('--primary-color', randomColor, 'important');
-
-  // const subtitles = document.getElementById("subtitles");
-
 });
 // ------------------------------modal-btn-3-end-------------------------------
 
@@ -68,10 +57,6 @@ $(document).ready(function () {
 
 // -------------------------------changefont--------------------------------------
 
-
-
-
-
 $(".changefont").on("click", function () {
   let fontfamily = "'Zilla Slab', serif"
   let font = 32;
@@ -87,52 +72,77 @@ $(".changefont").on("click", function () {
 // ---------------------------------change-fontend-------------
 let brightness = 50;
 $(".brightness").on("click", function () {
-  // filter: brightness(200%);
- 
   brightness= brightness+50
   console.log("pushed", brightness)
   $("html").attr("style", `filter: brightness(${brightness}%) !important;`);
 });
+// ------------------------------------------Invert-----------------------------------------------
+$(".invert").on("click", function() {
+  let darkColor = '#03b3fd'; // Change this to the dark color of your choice
+  $('body').css('background-color', darkColor);
+  $('body').css('color', darkColor); // Optional: change text color to contrast with background
+  $('h1').css('color', '#feb45d');
+  $('li').css('color', '#ffffff');
+  $("p").attr("style", `color: #ffffff;`);
 
-
-$(document).ready(function () {
-  $('#clickElement').on('click', function () {
-    $(this).css('background-color', 'lightgreen');
-  });
-});
-$(document).ready(function () {
-  $('#invertElement').click(function () {
-    var currentColor = $(this).css('background-color');
-    var invertedColor = invertColor(currentColor);
-    $(this).css('background-color', invertedColor);
-  });
-
-  function invertColor(hex) {
-    // Remove the hash sign if it exists
-    hex = hex.replace(/^#/, '');
-
-    // Convert the hex color to RGB
-    var r = parseInt(hex.substring(0, 2), 16);
-    var g = parseInt(hex.substring(2, 4), 16);
-    var b = parseInt(hex.substring(4, 6), 16);
-
-    // Invert the RGB values
-    r = 255 - r;
-    g = 255 - g;
-    b = 255 - b;
-
-    // Convert the inverted RGB values back to hex
-    r = r.toString(16);
-    g = g.toString(16);
-    b = b.toString(16);
-
-    // Pad single-digit hex values with a leading zero
-    if (r.length === 1) r = '0' + r;
-    if (g.length === 1) g = '0' + g;
-    if (b.length === 1) b = '0' + b;
-
-    // Combine the inverted RGB values to get the inverted color
-    return '#' + r + g + b;
-  }
+  // For changing CSS variables (works in modern browsers)
+  // document.documentElement.style.setProperty('--primary-color', darkColor);
 });
 
+/* ----------------------------------------------------------------------Line height */
+let lineheight = 1.5; // Set the initial line height value (adjust as needed)
+
+$(".lineheight").on("click", function() {
+  // Increase the line height by a specific factor (e.g., 1.5 times the current line height)
+  lineheight += 0.1; // You can adjust the increment value as needed
+  
+  // Set the new line height using .css() method
+  $("body").css("line-height", lineheight);
+});
+
+// ----------------------------------------contrast----------------------------
+
+let contrast = 100; // Initial contrast value (adjust as needed)
+
+$(".contrast").on("click", function() {
+  contrast += 50; // Increase contrast by 50 units (adjust as needed)
+  console.log("Contrast increased to", contrast);
+  $("html").css("filter", `contrast(${contrast}%)`);
+});
+
+// -----------------------------Saturation--------------------------
+
+let saturation = 100; // Initial saturation value (adjust as needed)
+
+$(".saturation").on("click", function() {
+  saturation += 50; // Increase saturation by 50 units (adjust as needed)
+  console.log("Saturation increased to", saturation);
+  $("html").css("filter", `saturate(${saturation}%)`);
+});
+
+// --------------------------------Grayscale--------------------
+
+let grayscaleValue = 0; // Initial grayscale value (0% means no grayscale, 100% means full grayscale)
+
+$(".grayscale").on("click", function() {
+  grayscaleValue += 50; // Increase grayscale by 50 units (adjust as needed)
+  console.log("Grayscale increased to", grayscaleValue);
+  $("html").css("filter", `grayscale(${grayscaleValue}%)`);
+});
+// ---------------------------------------Reading mask---------------------------------
+$(document).ready(function () {
+  $(".readingmask").on("click", function () {
+    $(document).on("mousemove", function (e) {
+      var scrollPosition = $(window).scrollTop();
+      $(".assessbility_reading_mask").css("top", e.clientY + scrollPosition + "px");
+    });
+  });
+
+  // Initially hide the .accessibility_line element
+  $(".assessbility_reading_mask").css("display", "none");
+
+  // Show .accessibility_line element when .reading-line is clicked
+  $(".readingmask").on("click", function () {
+    $(".assessbility_reading_mask").css("display", "block");
+  });
+});

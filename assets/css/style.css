@@ -132,7 +132,7 @@ body{
     outline: none;
     padding: 10px 24px;
     border-radius: 50px;
-    background-color: transparent;
+    background-color: white;
     font-size: 16px;
     line-height: 26px;
     font-weight: 600;
@@ -388,6 +388,20 @@ body .accessibility_line {
  pointer-events: none;
 }
 
+body .assessbility_reading_mask{
+    background: #000;
+    width: 100% !important;
+    min-width: 100% !important;
+    top: 20px;
+    left: 0;
+    box-sizing: border-box;
+    height: 50px !important;
+    border: solid 3px #fff300;
+    border-radius: 5px;
+    position: fixed;
+ 
+  
+}
 .hireme_section{
     padding-top: 45px;
     padding-bottom: 45px;
@@ -418,7 +432,6 @@ body .accessibility_line {
  .contactme_sec{
     padding-top: 50px;
     padding-bottom: 70px;
-    background-image: url("../img/hand-putting-wooden-block-cube-symbol-telephone-email-address-mobile-phone-website-page-contact-us-e.png");
 
  }
  .contactme_section{

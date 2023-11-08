@@ -94,6 +94,26 @@
                                                 icon="fa-solid:font"></iconify-icon>Dyslexic Font</button>
                                           <button class="btn btn-primary ms-4 modal-btn brightness"><iconify-icon
                                                 icon="ic:baseline-brightness-6"></iconify-icon>Brightness</button>
+                                          <button class="btn btn-primary ms-4 modal-btn invert"><iconify-icon
+                                                icon="mdi:invert-colors"></iconify-icon>Invert</button>
+                                          <button class="btn btn-primary ms-4 modal-btn lineheight"><iconify-icon
+                                                icon="gg:format-line-height"></iconify-icon>Line-height</button>
+
+                                       </div>
+                                    </div>
+                                    <div class="d-flex mt-4 justify-content-between">
+                                       <div class="button-wrapper d-flex">
+
+                                          <button class="btn btn-primary modal-btn contrast"><iconify-icon
+                                                icon="mdi:contrast-circle"></iconify-icon>Contrast</button>
+
+                                          <button class="btn ms-4 btn-primary modal-btn saturation"><iconify-icon
+                                                icon="tdesign:saturation"></iconify-icon>Saturation</button>
+
+                                          <button class="btn ms-4 btn-primary modal-btn grayscale"><iconify-icon
+                                                icon="tdesign:saturation"></iconify-icon>Grayscale</button>
+                                                <button class="btn ms-4 btn-primary modal-btn readingmask"><iconify-icon
+                                                   icon="tdesign:saturation"></iconify-icon>Reading mask</button>
                                        </div>
                                     </div>
                                  </div>
@@ -140,7 +160,7 @@
       </div>
    </div>
    <!-- <-about-part-start> -->
-   <div class="container-fluid about_sec  bg-light" id="about_id">
+   <div class="container-fluid about_sec" id="about_id">
       <div class="row">
          <div class="col-11 col-md-12 mx-auto">
             <div class="main_title">
@@ -329,7 +349,7 @@
          </div>
       </div> -->
    <!-- <-contact-> -->
-   <div class="container-fluid contactme_sec bg-light" id="about_id">
+   <div class="container-fluid contactme_sec " id="about_id">
       <div class="row">
          <div class="col-11 col-md-10 mx-auto">
             <div class="main_title">
@@ -341,20 +361,19 @@
                <div class="col-md-6 col-10 contact_inner">
                   <form>
                      <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                           placeholder="Type your name">
-                        <label for="html">Type your name</label><br>
+                        <label for="firstname">First name:</label>
+                        <input type="text" name="firstname" id="firstname"><br>
                      </div>
                      <div class="mb-3">
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                           placeholder="Type your mobile">
-                        <label for="html">Type your mobile</label><br>
+                        <label for="firstname">Last name:</label>
+<input type="text" name="firstname" id="firstname"><br>
                      </div>
 
                      <div class="mb-3">
+                        <label for="firstname">Type your msg</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                            placeholder="Type your message"></textarea>
-                        <label for="html">Type your message</label><br>
+                          
                      </div>
                      <div class="text-center">
                         <button class="hire_me" type="submit">submit</button>
@@ -363,7 +382,7 @@
                </div>
                <div class="col-md-3 col-10 contact_img">
                   <figure>
-                     <!-- <img src="./assets/img/call-center-concept-illustration_114360-2045.avif" class="img-fluid"> -->
+                     <img src="./assets/img/call-center-concept-illustration_114360-2045.avif" class="img-fluid">
                   </figure>
                </div>
             </div>
@@ -377,21 +396,21 @@
             <div class="row justify-content-around">
                <div
                   class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
-                  <p><i class="fa fa-2x fa-envelope" aria-hidden="hidden"></i></p>
+                  <p><i class="fa fa-2x fa-envelope  text-dark" aria-hidden="hidden"></i></p>
                   <br />
-                  <p class="fw-bold">test@gmail.com</p>
+                  <p class="fw-bold text-dark ">test@gmail.com</p>
                </div>
                <div
                   class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
-                  <p><i class="fab fa-2x fa-whatsapp" aria-hidden="hidden"></i></p>
+                  <p><i class="fab fa-2x fa-whatsapp  text-dark" aria-hidden="hidden"></i></p>
                   <br />
-                  <p class="fw-bold">+91 121212 21212</p>
+                  <p class="fw-bold text-dark">+91 121212 21212</p>
                </div>
                <div
                   class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
-                  <p><i class="fa 2px fa-map-marker" aria-hidden="hidden"></i></p>
+                  <p><i class="fa 2px fa-map-marker  text-dark" aria-hidden="hidden"></i></p>
                   <br />
-                  <p class="fw-bold">City</p>
+                  <p class="fw-bold text-dark ">City</p>
                </div>
             </div>
          </div>
@@ -433,6 +452,7 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"></script>
    <div class="accessibility_line"></div>
+   <div class="assessbility_reading_mask"></div>
 </body>
 
 </html>
