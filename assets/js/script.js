@@ -51,20 +51,22 @@ $(document).ready(function () {
   $(".reading-line").on("click", function () {
     $(".accessibility_line").css("display", "block");
   });
-});
+}); 
 
+ 
 // reading-line------------------------------------------------------------------
+ 
 
 // -------------------------------changefont--------------------------------------
 
 $(".changefont").on("click", function () {
+   
   let fontfamily = "'Zilla Slab', serif"
   let font = 32;
-
   $("body").attr("style", `font-family: ${fontfamily} !important; font-size: ${font}px !important;`);
   $("h1").attr("style", `font-family: ${fontfamily}!important; font-size: ${font}px !important;`);
   $("p").attr("style", `font-family: ${fontfamily} !important; font-size: ${font}px !important;`);
-
+  
 });
 
 
@@ -114,12 +116,7 @@ $(".contrast").on("click", function() {
 
 let saturation = 100; // Initial saturation value (adjust as needed)
 
-$(".saturation").on("click", function() {
-  saturation += 50; // Increase saturation by 50 units (adjust as needed)
-  console.log("Saturation increased to", saturation);
-  $("html").css("filter", `saturate(${saturation}%)`);
-});
-
+$
 // --------------------------------Grayscale--------------------
 
 let grayscaleValue = 0; // Initial grayscale value (0% means no grayscale, 100% means full grayscale)
@@ -137,8 +134,11 @@ $(document).ready(function () {
       $(".assessbility_reading_mask").css("top", e.clientY + scrollPosition + "px");
     });
   });
+  
 
   // Initially hide the .accessibility_line element
+
+
   $(".assessbility_reading_mask").css("display", "none");
 
   // Show .accessibility_line element when .reading-line is clicked
@@ -146,3 +146,25 @@ $(document).ready(function () {
     $(".assessbility_reading_mask").css("display", "block");
   });
 });
+
+$(document).ready(function () {
+  $(".readingmaskdark").on("click", function () {
+    $(document).on("mousemove", function (e) {
+      var scrollPosition = $(window).scrollTop();
+      $(".assessbility_reading_mask_dark").css("top", e.clientY + scrollPosition + "px");
+    });
+  });
+
+  // Initially hide the .accessibility_line element
+
+
+  $(".assessbility_reading_mask_dark").css("display", "none");
+
+  // Show .accessibility_line element when .reading-line is clicked
+  $(".readingmask").on("click", function () {
+    $(".assessbility_reading_mask_dark").css("display", "block");
+  });
+});
+
+
+

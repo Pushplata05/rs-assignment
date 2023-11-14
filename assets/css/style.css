@@ -16,6 +16,8 @@
     height: 250px;
     background-color: rgb(101, 99, 99);
 } */
+
+
 .nav-style {
     background: var(--primary-color);
     box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
@@ -62,9 +64,9 @@ body{
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
-
     color: #fff !important;
 }
+
 
 @media(max-width:998px) {
     .navbar-nav {
@@ -426,6 +428,21 @@ body .assessbility_reading_mask{
     color:#ffffff;
     letter-spacing: 3px;
  }
+ .assessbility_reading_mask_dark{
+  
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 0;
+        pointer-events: none;
+        background-color: rgba(0,0,0,.5);
+        z-index: 100000000000000020000;
+    
+ }
  .hireme_section h3{
     font-size: 37px;
     color: #ffffff;
@@ -487,6 +504,7 @@ footer{
 footer p{
  margin: 0;
 }
+
 
 @media(max-width: 992px){
     .main_title h1{
