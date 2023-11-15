@@ -37,20 +37,23 @@ $(".modal-btn3").on("click", function () {
 
 // reading-line------------------------------------------------------------------
 $(document).ready(function () {
-  $(".reading-line").on("click", function () {
-    $(document).on("mousemove", function (e) {
-      var scrollPosition = $(window).scrollTop();
-      $(".accessibility_line").css("top", e.clientY + scrollPosition + "px");
+    $(".accessibility_line").css("display", "none");
+    $(".reading-line").on("click", function () {
+      $(".accessibility_line").css("display", "block");
+      $(document).on("mousemove", function (e) {
+        var scrollPosition = $(window).scrollTop();
+        $(".accessibility_line").css("top", e.clientY  + "px");
+      });
     });
-  });
+   /*  $(".assessbility_reading_mask_dark").on("click", function () {
+      // $(".accessibility_line").css("display", "block");
+      $(document).on("mousemove", function (e) {
+        var scrollPosition = $(window).scrollTop();
+        $(".accessibility_line").css("height", e.clientY  + "px");
+      });
+    }); */
 
-  // Initially hide the .accessibility_line element
-  $(".accessibility_line").css("display", "none");
-
-  // Show .accessibility_line element when .reading-line is clicked
-  $(".reading-line").on("click", function () {
-    $(".accessibility_line").css("display", "block");
-  });
+    
 }); 
 
  
@@ -116,7 +119,12 @@ $(".contrast").on("click", function() {
 
 let saturation = 100; // Initial saturation value (adjust as needed)
 
-$
+$(".saturation").on("click", function() {
+  saturation += 50; // Increase saturation by 50 units (adjust as needed)
+  console.log("Saturation increased to", saturation);
+  $("html").css("filter", `saturate(${saturation}%)`);
+});
+
 // --------------------------------Grayscale--------------------
 
 let grayscaleValue = 0; // Initial grayscale value (0% means no grayscale, 100% means full grayscale)
@@ -165,6 +173,37 @@ $(document).ready(function () {
     $(".assessbility_reading_mask_dark").css("display", "block");
   });
 });
+
+$(".appreadingmask").on("click", function() {
+  $(document).ready(function () {
+    // Cache the jQuery objects for better performance
+    const myDivTop = $(".accessibly-app-reading-mask-top");
+    const myDivBottom = $(".accessibly-app-reading-mask-bottom");
+    const readingMask = $(".accessibly-app-reading-mask");
+    const windowHeight = $(window).height();
+  
+    $(document).on("mousemove", function (e) {
+      // Calculate the new top and bottom positions
+      const newTop = e.clientY - myDivTop.height() - 30;
+      const newBottom = windowHeight - e.clientY - 30;
+  
+      // Set the background color and z-index for the reading mask
+      readingMask.css({
+        'background-color': 'rgba(0, 0, 0, 0.5)',
+        'z-index': 100000000000000020000
+      });
+      // if(newTop > 1){
+      //   newTop = -newTop;
+      // }
+  
+      // Apply the new heights to the top and bottom parts of the reading mask
+      myDivTop.css({ top: newTop + "px" });
+      myDivTop.css({ height: e.clientY + "px" });
+      myDivBottom.css({ height: newBottom + "px" });
+    });
+  });
+});
+
 
 
 
