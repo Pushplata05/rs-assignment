@@ -1,5 +1,92 @@
 var menuObject = {
   "bigger_cursor": false,
+};
+
+// Initial state
+var initialState = {
+  font: 14,
+  brightness: 100,
+  contrast: 100,
+  saturation: 100,
+  grayscaleValue: 0,
+  lineheight: 1.5,
+  backgroundColor: 'white', // Change this to your default background color
+  fontColor: 'black', // Change this to your default font color
+  fontFamily: "'Zilla Slab', serif", // Change this to your default font family
+};
+
+// Function to reset all changes
+function resetChanges() {
+  // Reset font size
+  $("body").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
+  $("h1").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
+  $("p").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
+
+  // Reset cursor
+  menuObject.bigger_cursor = false;
+  $("body").css("cursor", "auto");
+
+  // Reset brightness, contrast, saturation, grayscale, line height
+  $("html").css("filter", `brightness(${initialState.brightness}%) contrast(${initialState.contrast}%) saturate(${initialState.saturation}%) grayscale(${initialState.grayscaleValue}%)`);
+  $("body").css("line-height", initialState.lineheight);
+
+  // Reset background and font color
+  $('body').css('background-color', initialState.backgroundColor);
+  $('body').css('color', initialState.fontColor);
+  $('h1').css('color', initialState.fontColor);
+  $('li').css('color', initialState.fontColor);
+  $("p").attr("style", `color: ${initialState.fontColor};`);
+}
+
+// ------------------------------modal-btn-1-------------------------------
+$(".modal-btn1").on("click", function () {
+  console.log("I am clicked")
+  initialState.font += 5;
+  $("body").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
+  $("h1").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
+  $("p").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
+});
+
+// ------------------------------modal-btn-2-------------------------------
+$(".modal-btn2").on("click", function () {
+  console.log("pushed")
+  menuObject.bigger_cursor = !menuObject.bigger_cursor;
+  if (menuObject.bigger_cursor) {
+      $("body").css("cursor", "url('assets/img/cursor.png') 100 36, auto");
+  } else {
+      $("body").css("cursor", "auto");
+  }
+});
+
+// ------------------------------modal-btn-3-------------------------------
+$(".modal-btn3").on("click", function () {
+  $("img").attr("style", `display: none !important;`);
+});
+
+// -------------------------------changefont--------------------------------------
+$(".changefont").on("click", function () {
+  initialState.fontfamily = "'Zilla Slab', serif";
+  initialState.font = 42;
+  $("body").attr("style", `font-family: ${initialState.fontfamily}; font-size: ${initialState.font}px !important;`);
+  $("h1").attr("style", `font-family: ${initialState.fontfamily}; font-size: ${initialState.font}px !important;`);
+  $("p").attr("style", `font-family: ${initialState.fontfamily}; font-size: ${initialState.font}px !important;`);
+});
+
+// ---------------------------------change-fontend-------------
+$(".brightness").on("click", function () {
+  initialState.brightness += 50;
+  $("html").attr("style", `filter: brightness(${initialState.brightness}%) !important;`);
+});
+
+// ... (other button handlers)
+
+// Reset button
+$(".reset-btn").on("click", function () {
+  resetChanges();
+});
+
+var menuObject = {
+  "bigger_cursor": false,
 
 };
 // ------------------------------modal-btn-1-------------------------------
@@ -203,7 +290,3 @@ $(".appreadingmask").on("click", function() {
     });
   });
 });
-
-
-
-
