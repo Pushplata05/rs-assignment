@@ -1,292 +1,212 @@
 var menuObject = {
-  "bigger_cursor": false,
+  bigger_cursor: false,
+  show_images: false,
+  show_mask: false,
 };
 
 // Initial state
 var initialState = {
-  font: 14,
+  font: 28,
   brightness: 100,
   contrast: 100,
   saturation: 100,
   grayscaleValue: 0,
   lineheight: 1.5,
-  backgroundColor: 'white', // Change this to your default background color
-  fontColor: 'black', // Change this to your default font color
-  fontFamily: "'Zilla Slab', serif", // Change this to your default font family
+  backgroundColor: "white",
+  fontColor: "black",
+  fontFamily: "'Zilla Slab', serif",
 };
+var tempstate = initialState;
 
-// Function to reset all changes
+function showReadingMask() {
+  const myDivTop = $(".accessibly-app-reading-mask-top");
+  const myDivBottom = $(".accessibly-app-reading-mask-bottom");
+  const readingMask = $(".accessibly-app-reading-mask");
+  const windowHeight = $(window).height();
+
+  // Unbind the previous event listener to avoid multiple bindings
+  $(document).off("mousemove");
+
+  if (menuObject.show_mask) {
+   
+    $(document).on("mousemove", function (e) {
+      console.log(menuObject.show_mask);
+      // Calculate the new top and bottom positions
+      const newTop = e.clientY - myDivTop.height() - 30;
+      const newBottom = windowHeight - e.clientY - 30;
+
+      // Set the background color and z-index for the reading mask
+      readingMask.css({
+        "background-color": "rgba(0, 0, 0, 0.5)",
+        "z-index": 100000000000000020000,
+      });
+
+      // Apply the new heights to the top and bottom parts of the reading mask
+      myDivTop.css({
+        top: newTop + "px",
+        height: e.clientY + "px",
+      });
+
+      myDivBottom.css({
+        height: newBottom + "px",
+      });
+    });
+  } else {
+   
+    myDivTop.css({ top: "0px", height: "0px" });
+    myDivBottom.css({ height: "0px" });
+    readingMask.css({ "z-index": -9999999 });
+  }
+}
+
+
+// ------------------------------Font-btn-1-------------------------------
+$(".modal-btn1").on("click", function () {
+  tempstate.font += 5;
+  $("body").attr(
+    "style",
+    `font-family: ${tempstate.fontFamily}; font-size: ${tempstate.font}px !important;`
+  );
+  $("h1").attr(
+    "style",
+    `font-family: ${tempstate.fontFamily}; font-size: ${tempstate.font}px !important;`
+  );
+  $("p").attr(
+    "style",
+    `font-family: ${tempstate.fontFamily}; font-size: ${tempstate.font}px !important;`
+  );
+});
+
+// ------------------------------Currsor-btn-2-------- bigger_curso : true/ false-----------------------
+$(".modal-btn2").on("click", function () {
+  menuObject.bigger_cursor = !menuObject.bigger_cursor;
+  if (menuObject.bigger_cursor) {
+    $(".modal-btn2").text("Default cursor")
+    $("body").css("cursor", "url('assets/img/cursor (1).png'), auto");
+  } else {
+    $(".modal-btn2").text("Bigger cursor")
+    $("body").css("cursor", "auto");
+  }
+});
+// ------------------------------modal-btn-3------ Images: true/false-------------------------
+$(".modal-btn3").on("click", function () {
+  menuObject.show_images = !menuObject.show_images;
+  if (menuObject.show_images) {
+    $(".modal-btn3").text("Show Images")
+    $("img").attr("style", `display: none !important;`);
+  } else {
+    $(".modal-btn3").text("Hide Images")
+    $("img").attr("style", `display: inline-block !important;`);
+  }
+
+});
+
+$(".reading-line").on("click", function () {
+  $(".accessibility_line").css("display", "block");
+  $(document).on("mousemove", function (e) {
+    var scrollPosition = $(window).scrollTop();
+    $(".accessibility_line").css("top", e.clientY + "px");
+  });
+});
+
+// -------------------------------changefont--------------------------------------
+$(".changefont").on("click", function () {
+  tempstate.fontfamily = "'Zilla Slab', serif";
+  tempstate.font = 42;
+  $("body").attr(
+    "style",
+    `font-family: ${tempstate.fontfamily}; font-size: ${tempstate.font}px !important;`
+  );
+  $("h1").attr(
+    "style",
+    `font-family: ${tempstate.fontfamily}; font-size: ${tempstate.font}px !important;`
+  );
+  $("p").attr(
+    "style",
+    `font-family: ${tempstate.fontfamily}; font-size: ${tempstate.font}px !important;`
+  );
+});
+
+// ---------------------------------change-fontend-------------
+$(".brightness").on("click", function () {
+  tempstate.brightness += 50;
+  $("html").attr(
+    "style",
+    `filter: brightness(${tempstate.brightness}%) !important;`
+  );
+});
+
+$(".invert").on("click", function () {
+  let darkColor = "#03b3fd"; // Change this to the dark color of your choice
+  $("body").css("background-color", darkColor);
+  $("body").css("color", darkColor); // Optional: change text color to contrast with background
+  $("h1").css("color", "#feb45d");
+  $("li").css("color", "#ffffff");
+  $("p").attr("style", `color: #ffffff;`);
+});
+$(".lineheight").on("click", function () {
+  tempstate.lineheight += 0.1;
+  $("body").css("line-height", tempstate.lineheight);
+});
+
+$(".contrast").on("click", function () { tempstate.contrast += 50; $("html").css("filter", `contrast(${tempstate.contrast}%)`); });
+$(".saturation").on("click", function () { tempstate.saturation += 50; $("html").css("filter", `saturate(${tempstate.saturation}%)`); });
+$(".grayscale").on("click", function () { tempstate.grayscaleValue += 50; $("html").css("filter", `grayscale(${tempstate.grayscaleValue}%)`); });
+
+$(document).ready(function () {
+  $(".appreadingmask").on("click", function () {
+    menuObject.show_mask = !menuObject.show_mask;
+    showReadingMask()
+  })
+});
+
+// ... (other button handlers)
+
+// Reset button
+
+
+
 function resetChanges() {
-  // Reset font size
+
+  let initialState = {
+    font: 28,
+    brightness: 100,
+    contrast: 100,
+    saturation: 100,
+    grayscaleValue: 0,
+    lineheight: 1.5,
+    backgroundColor: "white",
+    fontColor: "black",
+    fontFamily: "'Zilla Slab', serif",
+  };
+  console.log(initialState, tempstate)
   $("body").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
   $("h1").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
   $("p").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
 
   // Reset cursor
   menuObject.bigger_cursor = false;
+  menuObject.show_images = false;
+  menuObject.show_mask = false;
+  showReadingMask()
+  $(".accessibility_line").css("display", "none");
   $("body").css("cursor", "auto");
-
+  $("img").attr("style", `display: inline-block !important;`);
   // Reset brightness, contrast, saturation, grayscale, line height
-  $("html").css("filter", `brightness(${initialState.brightness}%) contrast(${initialState.contrast}%) saturate(${initialState.saturation}%) grayscale(${initialState.grayscaleValue}%)`);
+  $("html").css(
+    "filter",
+    `brightness(${initialState.brightness}%) contrast(${initialState.contrast}%) saturate(${initialState.saturation}%) grayscale(${initialState.grayscaleValue}%)`
+  );
   $("body").css("line-height", initialState.lineheight);
 
   // Reset background and font color
-  $('body').css('background-color', initialState.backgroundColor);
-  $('body').css('color', initialState.fontColor);
-  $('h1').css('color', initialState.fontColor);
-  $('li').css('color', initialState.fontColor);
+  $("body").css("background-color", initialState.backgroundColor);
+  $("body").css("color", initialState.fontColor);
+  $("h1").css("color", initialState.fontColor);
+  $("li").css("color", initialState.fontColor);
   $("p").attr("style", `color: ${initialState.fontColor};`);
 }
-
-// ------------------------------modal-btn-1-------------------------------
-$(".modal-btn1").on("click", function () {
-  console.log("I am clicked")
-  initialState.font += 5;
-  $("body").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
-  $("h1").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
-  $("p").attr("style", `font-family: ${initialState.fontFamily}; font-size: ${initialState.font}px !important;`);
-});
-
-// ------------------------------modal-btn-2-------------------------------
-$(".modal-btn2").on("click", function () {
-  console.log("pushed")
-  menuObject.bigger_cursor = !menuObject.bigger_cursor;
-  if (menuObject.bigger_cursor) {
-      $("body").css("cursor", "url('assets/img/cursor.png') 100 36, auto");
-  } else {
-      $("body").css("cursor", "auto");
-  }
-});
-
-// ------------------------------modal-btn-3-------------------------------
-$(".modal-btn3").on("click", function () {
-  $("img").attr("style", `display: none !important;`);
-});
-
-// -------------------------------changefont--------------------------------------
-$(".changefont").on("click", function () {
-  initialState.fontfamily = "'Zilla Slab', serif";
-  initialState.font = 42;
-  $("body").attr("style", `font-family: ${initialState.fontfamily}; font-size: ${initialState.font}px !important;`);
-  $("h1").attr("style", `font-family: ${initialState.fontfamily}; font-size: ${initialState.font}px !important;`);
-  $("p").attr("style", `font-family: ${initialState.fontfamily}; font-size: ${initialState.font}px !important;`);
-});
-
-// ---------------------------------change-fontend-------------
-$(".brightness").on("click", function () {
-  initialState.brightness += 50;
-  $("html").attr("style", `filter: brightness(${initialState.brightness}%) !important;`);
-});
-
-// ... (other button handlers)
-
-// Reset button
 $(".reset-btn").on("click", function () {
   resetChanges();
 });
 
-var menuObject = {
-  "bigger_cursor": false,
-
-};
-// ------------------------------modal-btn-1-------------------------------
-let font = 14;
-$(".modal-btn1").on("click", function () {
-  console.log("I ma clicked")
-  font = font + 5;
-  // $("body").css("cursor", "url('https://abs.twimg.com/emoji/v2/72x72/1f525.png') 100 36, auto !important");
-  $("body").attr("style", `font-size: ${font}px !important; `);
-  $("h1").attr("style", `font-size: ${font}px !important;`);
-  $("p").attr("style", `font-size: ${font}px !important;`);
-  //   $("img").attr("style", `display: none !important;`);
-  //   let randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-  //         console.log(randomColor)
-  //         $(':root').get(0).style.setProperty('--primary-color', randomColor, 'important');
-
-  // const subtitles = document.getElementById("subtitles");
-});
-
-// ------------------------------modal-btn-1-end-------------------------------
-
-// ------------------------------modal-btn-2-------------------------------
-$(".modal-btn2").on("click", function () {
-  console.log("pushed")
-  $("body").css("cursor", "url('assets/img/cursor (1).png') 100 36, auto");
-});
-
-// ------------------------------modal-btn-2-end-------------------------------
-
-// ------------------------------modal-btn-3-------------------------------
-$(".modal-btn3").on("click", function () {
-  $("img").attr("style", `display: none !important;`);
-});
-// ------------------------------modal-btn-3-end-------------------------------
-
-// reading-line------------------------------------------------------------------
-$(document).ready(function () {
-    $(".accessibility_line").css("display", "none");
-    $(".reading-line").on("click", function () {
-      $(".accessibility_line").css("display", "block");
-      $(document).on("mousemove", function (e) {
-        var scrollPosition = $(window).scrollTop();
-        $(".accessibility_line").css("top", e.clientY  + "px");
-      });
-    });
-   /*  $(".assessbility_reading_mask_dark").on("click", function () {
-      // $(".accessibility_line").css("display", "block");
-      $(document).on("mousemove", function (e) {
-        var scrollPosition = $(window).scrollTop();
-        $(".accessibility_line").css("height", e.clientY  + "px");
-      });
-    }); */
-
-    
-}); 
-
- 
-// reading-line------------------------------------------------------------------
- 
-
-// -------------------------------changefont--------------------------------------
-
-$(".changefont").on("click", function () {
-   
-  let fontfamily = "'Zilla Slab', serif"
-  let font = 32;
-  $("body").attr("style", `font-family: ${fontfamily} !important; font-size: ${font}px !important;`);
-  $("h1").attr("style", `font-family: ${fontfamily}!important; font-size: ${font}px !important;`);
-  $("p").attr("style", `font-family: ${fontfamily} !important; font-size: ${font}px !important;`);
-  
-});
-
-
-
-// ---------------------------------change-fontend-------------
-let brightness = 50;
-$(".brightness").on("click", function () {
-  brightness= brightness+50
-  console.log("pushed", brightness)
-  $("html").attr("style", `filter: brightness(${brightness}%) !important;`);
-});
-// ------------------------------------------Invert-----------------------------------------------
-$(".invert").on("click", function() {
-  let darkColor = '#03b3fd'; // Change this to the dark color of your choice
-  $('body').css('background-color', darkColor);
-  $('body').css('color', darkColor); // Optional: change text color to contrast with background
-  $('h1').css('color', '#feb45d');
-  $('li').css('color', '#ffffff');
-  $("p").attr("style", `color: #ffffff;`);
-
-  // For changing CSS variables (works in modern browsers)
-  // document.documentElement.style.setProperty('--primary-color', darkColor);
-});
-
-/* ----------------------------------------------------------------------Line height */
-let lineheight = 1.5; // Set the initial line height value (adjust as needed)
-
-$(".lineheight").on("click", function() {
-  // Increase the line height by a specific factor (e.g., 1.5 times the current line height)
-  lineheight += 0.1; // You can adjust the increment value as needed
-  
-  // Set the new line height using .css() method
-  $("body").css("line-height", lineheight);
-});
-
-// ----------------------------------------contrast----------------------------
-
-let contrast = 100; // Initial contrast value (adjust as needed)
-
-$(".contrast").on("click", function() {
-  contrast += 50; // Increase contrast by 50 units (adjust as needed)
-  console.log("Contrast increased to", contrast);
-  $("html").css("filter", `contrast(${contrast}%)`);
-});
-
-// -----------------------------Saturation--------------------------
-
-let saturation = 100; // Initial saturation value (adjust as needed)
-
-$(".saturation").on("click", function() {
-  saturation += 50; // Increase saturation by 50 units (adjust as needed)
-  console.log("Saturation increased to", saturation);
-  $("html").css("filter", `saturate(${saturation}%)`);
-});
-
-// --------------------------------Grayscale--------------------
-
-let grayscaleValue = 0; // Initial grayscale value (0% means no grayscale, 100% means full grayscale)
-
-$(".grayscale").on("click", function() {
-  grayscaleValue += 50; // Increase grayscale by 50 units (adjust as needed)
-  console.log("Grayscale increased to", grayscaleValue);
-  $("html").css("filter", `grayscale(${grayscaleValue}%)`);
-});
-// ---------------------------------------Reading mask---------------------------------
-$(document).ready(function () {
-  $(".readingmask").on("click", function () {
-    $(document).on("mousemove", function (e) {
-      var scrollPosition = $(window).scrollTop();
-      $(".assessbility_reading_mask").css("top", e.clientY + scrollPosition + "px");
-    });
-  });
-  
-
-  // Initially hide the .accessibility_line element
-
-
-  $(".assessbility_reading_mask").css("display", "none");
-
-  // Show .accessibility_line element when .reading-line is clicked
-  $(".readingmask").on("click", function () {
-    $(".assessbility_reading_mask").css("display", "block");
-  });
-});
-
-$(document).ready(function () {
-  $(".readingmaskdark").on("click", function () {
-    $(document).on("mousemove", function (e) {
-      var scrollPosition = $(window).scrollTop();
-      $(".assessbility_reading_mask_dark").css("top", e.clientY + scrollPosition + "px");
-    });
-  });
-
-  // Initially hide the .accessibility_line element
-
-
-  $(".assessbility_reading_mask_dark").css("display", "none");
-
-  // Show .accessibility_line element when .reading-line is clicked
-  $(".readingmask").on("click", function () {
-    $(".assessbility_reading_mask_dark").css("display", "block");
-  });
-});
-
-$(".appreadingmask").on("click", function() {
-  $(document).ready(function () {
-    // Cache the jQuery objects for better performance
-    const myDivTop = $(".accessibly-app-reading-mask-top");
-    const myDivBottom = $(".accessibly-app-reading-mask-bottom");
-    const readingMask = $(".accessibly-app-reading-mask");
-    const windowHeight = $(window).height();
-  
-    $(document).on("mousemove", function (e) {
-      // Calculate the new top and bottom positions
-      const newTop = e.clientY - myDivTop.height() - 30;
-      const newBottom = windowHeight - e.clientY - 30;
-  
-      // Set the background color and z-index for the reading mask
-      readingMask.css({
-        'background-color': 'rgba(0, 0, 0, 0.5)',
-        'z-index': 100000000000000020000
-      });
-      // if(newTop > 1){
-      //   newTop = -newTop;
-      // }
-  
-      // Apply the new heights to the top and bottom parts of the reading mask
-      myDivTop.css({ top: newTop + "px" });
-      myDivTop.css({ height: e.clientY + "px" });
-      myDivBottom.css({ height: newBottom + "px" });
-    });
-  });
-});

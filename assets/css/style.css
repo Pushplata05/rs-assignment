@@ -376,6 +376,7 @@ video {
 
 body .accessibility_line {
  background: #000;
+ display: none;
  width: 100% !important;
  min-width: 100% !important;
  top: 20px;
