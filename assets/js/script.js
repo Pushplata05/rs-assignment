@@ -101,7 +101,7 @@ $(".modal-btn3").on("click", function () {
 
 });
 
-$(".reading-line").on("click", function () {
+$(".reading-line").on("click", function () { 
   $(".accessibility_line").css("display", "block");
   $(document).on("mousemove", function (e) {
     var scrollPosition = $(window).scrollTop();
@@ -137,7 +137,7 @@ $(".brightness").on("click", function () {
 });
 
 $(".invert").on("click", function () {
-  let darkColor = "#03b3fd"; // Change this to the dark color of your choice
+  let darkColor = "#000000"; // Change this to the dark color of your choice
   $("body").css("background-color", darkColor);
   $("body").css("color", darkColor); // Optional: change text color to contrast with background
   $("h1").css("color", "#feb45d");
