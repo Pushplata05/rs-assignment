@@ -84,27 +84,21 @@ function updateFontStyles() {
 // Font size increment/decrement logic
 $(".modal-btn1").on("click", function () {
   // Set menuObject.increase_font based on the current font size
-  menuObject.increase_font = tempstate.font > 50 ? false : true;
-  if (tempstate.font > 50 && menuObject.decrease_font) {
-    menuObject.increase_font = false;
-  } else {
-    menuObject.increase_font = true;
-    menuObject.decrease_font = true;
-  }
-  
-  console.log(tempstate.font, menuObject.increase_font, menuObject.decrease_font)
+  menuObject.increase_font = tempstate.font < 50 && !menuObject.decrease_font;
 
   if (menuObject.increase_font) {
-    if (tempstate.font < 50) {
-      tempstate.font += 5;
-      $(".modal-btn1").html(`<iconify-icon icon="fluent:line-horizontal-1-24-filled"></iconify-icon>Increase Font`);
-    }
+    tempstate.font += 5;
+    $(".modal-btn1").html(`<iconify-icon icon="fluent:line-horizontal-1-24-filled"></iconify-icon>Increase Font`);
   } else {
-    if (tempstate.font > 28) {
-      tempstate.font -= 5;
-      $(".modal-btn1").html(`<iconify-icon icon="fluent:line-horizontal-1-24-filled"></iconify-icon>Decrease Font`);
-    }
+    tempstate.font -= 5;
+    $(".modal-btn1").html(`<iconify-icon icon="fluent:line-horizontal-1-24-filled"></iconify-icon>Decrease Font`);
+
+    // Ensure the font size is within the desired range
+    tempstate.font = Math.max(tempstate.font, 28);
   }
+
+  // Set menuObject.decrease_font based on the current font size
+  menuObject.decrease_font = tempstate.font > 28;
 
   updateFontStyles();
 });
@@ -198,14 +192,7 @@ $(".brightness").on("click", function () {
   );
 });
 
-$(".invert").on("click", function () {
-  let darkColor = "#000000"; // Change this to the dark color of your choice
-  $("body").css("background-color", darkColor);
-  $("body").css("color", darkColor); // Optional: change text color to contrast with background
-  $("h1").css("color", "#feb45d");
-  $("li").css("color", "#ffffff");
-  $("p").attr("style", `color: #ffffff;`);
-});
+  
 
 
 $(".lineheight").on("click", function () {
@@ -227,6 +214,12 @@ $(document).ready(function () {
 // ... (other button handlers)
 
 // Reset button
+
+
+
+
+
+
 
 
 
