@@ -1,477 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <title>Home</title>
-   <meta charset="utf-8">
+   <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <title>Document</title>
    <link rel="stylesheet" href="./assets/css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/fontawesome.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-   <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
-   <link rel="stylesheet" href="./assets/Fonts/Proxima-Nova-Font/">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zilla+Slab:wght@300;500;600;700&display=swap"
-      rel="stylesheet">
-   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-   <style></style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
-
 <body>
-   <!-- navbar started -->
-   <header class="nav-style mx-auto">
-      <div class="">
-         <div class="col-md-10 col-11 mx-auto">
-            <nav class="navbar navbar-expand-lg navbar-light" aria-controls="navbarSupportedContent"
-               aria-label="Toggle navigation">
-               <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Accessibility</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                     aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-link">
-                        <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Service</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                           <span class="accessibility-icon" href="" type="button"
-                              class="btn btn-modal d-flex justify-content-center">
-                              <iconify-icon icon="solar:accessibility-bold"></iconify-icon>
-                           </span>
-                        </li>
-                        <!-- Modal -->
-                        <div class="modal accessibility-modal fade" id="exampleModal" tabindex="-1"
-                           aria-labelledby="exampleModalLabel" aria-hidden="true">
-                           <div class="modal-dialog">
-                              <div class="modal-content">
-                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Accessibility</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                       aria-label="Close"></button>
-                                 </div>
-                                 <div class="modal-body">
-                                    <div class="d-flex justify-content-between">
-                                       <div class="button-wrapper d-flex">
-                                          <button class="btn btn-primary modal-btn1 modal-btn">
-                                             <iconify-icon icon="tabler:zoom-in-filled"></iconify-icon>Bigger Text
-                                          </button>
-                                          <button class="btn btn-primary ms-4 modal-btn modal-btn2">
-                                             <iconify-icon icon="fontisto:cursor"></iconify-icon>Bigger Cursor
-                                          </button>
-                                          <button class="btn btn-primary ms-4 modal-btn modal-btn3">
-                                             <iconify-icon icon="ion:image-sharp"></iconify-icon>Hide-images
-                                          </button>
-                                          <button class="btn btn-primary ms-4 modal-btn reading-line">
-                                             <iconify-icon icon="fluent:line-horizontal-1-24-filled"></iconify-icon>
-                                             Reading
-                                             Line
-                                          </button>
-
-                                       </div>
-                                    </div>
-                                    <div class="d-flex mt-4 justify-content-between">
-                                       <div class="button-wrapper d-flex">
-                                          <button class="btn btn-primary modal-btn changefont">
-                                             <iconify-icon icon="fa-solid:font"></iconify-icon>Dyslexic Font
-                                          </button>
-                                          <button class="btn btn-primary ms-4 modal-btn brightness">
-                                             <iconify-icon icon="ic:baseline-brightness-6"></iconify-icon>Brightness
-                                          </button>
-                                          <button class="btn btn-primary ms-4 modal-btn invert">
-                                             <iconify-icon icon="mdi:invert-colors"></iconify-icon>Invert
-                                          </button>
-                                          <button class="btn btn-primary ms-4 modal-btn lineheight">
-                                             <iconify-icon icon="gg:format-line-height"></iconify-icon>Line-height
-                                          </button>
-                                       </div>
-                                    </div>
-                                    <div class="d-flex mt-4 justify-content-between">
-                                       <div class="button-wrapper d-flex">
-
-                                          <button class="btn btn-primary modal-btn contrast">
-                                             <iconify-icon icon="mdi:contrast-circle"></iconify-icon>Contrast
-                                          </button>
-
-                                          <button class="btn ms-4 btn-primary modal-btn saturation">
-                                             <iconify-icon icon="tdesign:s aturation"></iconify-icon>Saturation
-                                          </button>
-
-                                          <button class="btn ms-4 btn-primary modal-btn grayscale">
-                                             <iconify-icon icon="tdesign:saturation"></iconify-icon>Grayscale
-                                          </button>
-                                          <button class="btn ms-4 btn-primary modal-btn appreadingmask">
-                                             <iconify-icon icon="tdesign:saturation"></iconify-icon>app Reading mask
-                                          </button>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="modal-footer">
-                                    <div class="button-wrapper d-flex">
-                                       <button type="button" class="btn btn-secondary"
-                                          data-bs-dismiss="modal">Close</button>
-                                       <button type="button" class="btn btn-success reset-btn">Reset Settings</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-         </div>
-      </div>
-   </header>
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col-11 col-md-10 mx-auto">
-            <div class="row d-flex align-items-center">
-               <div class="col-md-6  order-2 order-md-1">
-                  <h1 class="header_text">
-                     Web Accessibility
-                  </h1>
-                  <p>Web accessibility, or eAccessibility, is the inclusive practice of ensuring there are no barriers
-                     that prevent interaction with, or access to, websites on the World Wide Web by people with physical
-                     disabilities,</p>
 
 
-                  <div class="d-flex mt-4">
-                     <button class="hire_me"><i class="fas fa-check me-3"></i>Hire Me</button>
-                     <button class="about_me ms-3"><i class="fa fa-user me-3"></i>About me</button>
-                  </div>
-               </div>
-               <div class="col-md-6  order-1">
-                  <div class="image-wrapper">
-                     <img src="./assets/img/image 1.png" alt="web-assessbility on screen" class="img-fluid frame_resp">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- <-about-part-start> -->
-   <div class="container-fluid about_sec" id="about_id">
-      <div class="row">
-         <div class="col-11 col-md-12 mx-auto">
-            <div class="main_title">
-               <h1>About Me</h1>
-            </div>
-            <div class="row col-md-12">
-               <div class="col-md-5 col-11 d-flex justify-content-center 
-                     ">
-                  <img src="./assets/img/about4.png" alt="Who I am?" class="img-fluid frame_resp">
-               </div>
-               <div class="col-md-7 col-11 about_text d-flex justify-content-center align-items-start flex-column">
-                  <h2 class="mt-4">What I am</h2>
-                  <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
-                     websites, web services and online stores. My passion is to design digital user experiences through
-                     the bold interface and meaningful interactions.
-                  </p>
+ 
+  <header>
+    <h1>Mock Integration Demo</h1>
+    <p>Google Reviews • Instagram Feed • Play Store Badge</p>
+  </header>
 
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- work exp -->
-   <!-- <div class="container-fluid expert_sec" id="about_id">
-         <div class="row">
-            <div class="col-11 col-md-12 mx-auto">
-               <div class="main_title">
-                  <h1>Work-Expertise</h1>
-                  <p class="text-center"> I am a passionate designer. I am a passionate designer. I am a passionate
-                     designer</p>
-         
-               </div>
-               <div class="row">
-         
-                  <div class="common_div col-md-7 col-11 about_text d-flex  align-items-start flex-column">
-                     <div class="w-100">
-                        <h2 class="expert_h1">Photoshop </h2>
-                        <div class="progress">
-                           <div class="progress-bar pb_1" role="progressbar"></div>
-                        </div>
-                     </div>
-                     <div class="w-100 my-5">
-                        <h2 class="expert_h2">Ilustrator </h2>
-                        <div class="progress">
-                           <div class="progress-bar pb_2" role="progressbar"></div>
-                        </div>
-                     </div>
-                     <div class="w-100 ">
-                        <h2 class="expert_h3">Branding </h2>
-                        <div class="progress">
-                           <div class="progress-bar pb_3" role="progressbar"></div>
-                        </div>
-                     </div>
-         
-         
-                  </div>
-                  <div class="col-md-5 col-11">
-                     <div class="float-md-right text-center common_div">
-                        <img src="./assets/img/Group 91.png" class="img-fluid frame_resp common_div ">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         </div> -->
-   <!-- <-our-services> -->
-   <div class="container-fluid ourservices" id="about_id">
-      <div class="row">
-         <div class="col-11 col-md-10 mx-auto">
-            <div class="main_title">
-               <h1>Our-Services</h1>
-               <p class="text-center">Our-Services provide<span class="font-weight-bold">Quality</span></p>
-            </div>
-            <div class="row justify-content-around mt-5 gy-5">
-               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
-                  <div class="heart_at_bottom">
-                     <h1>1</h1>
-                     <ul>
-                        <li>
+  <section>
+    <h2>⭐ Google Reviews (Embed)</h2>
+    <div class="embed-wrapper">
+     <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-4ed87e61-59c4-4cc5-9b04-9111ef574bf7" data-elfsight-app-lazy></div>
+      <!-- Replace this URL with your own Google Reviews embed widget -->
+    </div>
+  </section>
 
-                           <img src="./assets/img/circled-dot.png" alt="here is logo"
-                              class="img-fluid service_list_icon">Logo
-                        </li>
-                        <li>
+  <section>
+    <h2>📸 Instagram Feed</h2>
+    <div class="instagram-feed">
+      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/b10c1ce0664158a1a3439018425bcfeb.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 
-                           <img src="./assets/img/circled-dot.png" alt="here is Business card"
-                              class="img-fluid service_list_icon">Business
-                           card
-                        </li>
-                        <li>
+    </div>
+  </section>
 
-                           <img src="./assets/img/circled-dot.png" alt="here is Letterhand"
-                              class="img-fluid service_list_icon">Letterhead
-                        </li>
-                        <li>
+  <section class="playstore">
+    <h2>📱 Get Our App</h2>
+    <a href="https://play.google.com/store/apps/details?id=com.netway.phone.advice" target="_blank" rel="noopener">
+      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+           alt="Get it on Google Play" 
+           width="200">
+    </a>
+    
+  </section>
 
-                           <img src="./assets/img/circled-dot.png" alt="here is Branding"
-                              class="img-fluid service_list_icon">Branding
+  <footer>
+    <p>&copy; 2025 MockSite Inc. | Built for Interview Test</p>
+  </footer>
+<!-- Elfsight Google Reviews Widget -->
 
-                        </li>
-                     </ul>
-                  </div>
-                  <i class="far fa-heart fa-4x"></i>
-               </div>
-               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
-                  <div class="heart_at_bottom">
-                     <h1>2</h1>
-                     <ul>
-                        <li>
 
-                           <img src="./assets/img/circled-dot.png" alt="here is logo"
-                              class="img-fluid service_list_icon">Logo
-                        </li>
-                        <li>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 
-                           <img src="./assets/img/circled-dot.png" alt="here is Business card"
-                              class="img-fluid service_list_icon">Business
-                           card
-                        </li>
-                        <li>
-
-                           <img src="./assets/img/circled-dot.png" alt="here is Letterhand"
-                              class="img-fluid service_list_icon">Letterhead
-                        </li>
-                        <li>
-
-                           <img src="./assets/img/circled-dot.png" alt="here is Branding"
-                              class="img-fluid service_list_icon">Branding
-                           Stationary
-                        </li>
-                     </ul>
-                  </div>
-                  <i class="far fa-heart fa-4x"></i>
-               </div>
-               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
-                  <div class="heart_at_bottom">
-                     <h1>3</h1>
-                     <ul>
-                        <li>
-
-                           <img src="./assets/img/circled-dot.png" alt="here is logo"
-                              class="img-fluid service_list_icon">Logo
-                        </li>
-                        <li>
-
-                           <img src="./assets/img/circled-dot.png" alt="here is Business card"
-                              class="img-fluid service_list_icon">Business
-                           card
-                        </li>
-                        <li>
-
-                           <img src="./assets/img/circled-dot.png" alt="here is Letterhand"
-                              class="img-fluid service_list_icon">Letterhead
-                        </li>
-                        <li>
-
-                           <img src="./assets/img/circled-dot.png" alt="here is Branding"
-                              class="img-fluid service_list_icon">Branding
-                           Stationary
-                        </li>
-                     </ul>
-                  </div>
-                  <i class="far fa-heart fa-4x"></i>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- <-hire-me Section> -->
-   <!-- <div class="hireme_section container-fluid">
-         <div class="row">
-            <div class="col-md-10 col-11  mx-auto">
-               <h1>
-                  Hi Dear,
-               </h1>
-               <br />
-               <p>Design, Build & Grow your Business with Infostride
-                  Lorem ipsum dolor sit amet, consectetur adipiscingelit,
-               </p>
-               <br />
-             <div class="justify-content-center d-flex">
-               <button class="subscribe justify-content-center"><i class="fa fa-check"></i>Subscribe</button>
-             </div>
-              
-            </div>
-         </div>
-      </div> -->
-   <!-- <-contact-> -->
-   <div class="container-fluid contactme_sec " id="about_id">
-      <div class="row">
-         <div class="col-11 col-md-10 mx-auto">
-            <div class="main_title">
-               <h1>Contact me</h1>
-               <p class="text-center">Feel free to<span class="font-weight-bold">Contact</span></p>
-            </div>
-            <div class="row  mt-5 gy-5 contact_resp">
-
-               <div class="col-md-6 col-10 contact_inner">
-                  <form>
-                     <fieldset>
-                        <legend>Add a comment</legend>
-                        <p class="instruction"><span class="required">Required fields</span> are in red and marked with
-                           an <span class="required">*</span></p>
-                        <div class="row">
-                           <label for="name5">Name</label>
-                           <input type="text" id="name5" name="name" value="Superbear" aria-label="visible">
-                        </div>
-                        <div class="row error">
-                           <label class="required" for="email5"> E-mail *</label>
-                           <input type="text" id="email5" aria-label="visible" name="email"
-                              value="superbear@@hq.example.com" aria-invalid="true">
-                        </div>
-                        <div class="row">
-                           <label for="website3">Website</label>
-                           <input type="text" id="website3" name="website">
-                        </div>
-                        <div class="row error">
-                           <label class="required" for="comment3"> Comment *</label>
-                           <textarea name="comment" id="comment3" aria-label="visible" aria-invalid="true"
-                              spellcheck="false"></textarea>
-                        </div>
-                     </fieldset>
-                  </form>
-               </div>
-               <div class="col-md-3 col-10 contact_img">
-                     <img src="./assets/img/call-center-concept-illustration_114360-2045.avif" alt="form-img" class="img-fluid">
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- <---------------------contact enquery--------------->
-   <div class="container-fluid mt-5">
-      <div class="row">
-         <div class="col-11 col-md-10 mx-auto">
-            <div class="row justify-content-around">
-               <div
-                  class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
-                  <p><i class="fa fa-2x fa-envelope  text-dark" aria-hidden="hidden"></i></p>
-                  <br />
-                  <p class="fw-bold text-dark ">test@gmail.com</p>
-               </div>
-               <div
-                  class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
-                  <p><i class="fab fa-2x fa-whatsapp  text-dark" aria-hidden="hidden"></i></p>
-                  <br />
-                  <p class="fw-bold text-dark">+91 121212 21212</p>
-               </div>
-               <div
-                  class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
-                  <p><i class="fa 2px fa-map-marker  text-dark" aria-hidden="hidden"></i></p>
-                  <br />
-                  <p class="fw-bold text-dark ">City</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <section class="my-5">
-      <div class="container">
-         <div class="row justify-content-center">
-            <div class="col-lg-1 col-2 socialsites_links">
-               <i class="fab fa-facebook-f fa-2x" aria-hidden="hidden"></i>
-            </div>
-            <div class="col-lg-1 col-2 socialsites_links">
-               <i class="fab fa-2x fa-instagram" aria-hidden="hidden"></i>
-            </div>
-            <div class="col-lg-1 col-2 socialsites_links">
-               <i class="fab fa-2x fa-pinterest" aria-hidden="hidden"></i>
-            </div>
-            <div class="col-lg-1 col-2 socialsites_links">
-               <i class="fab fa-2x fa-behance" aria-hidden="hidden"></i>
-            </div>
-         </div>
-      </div>
-   </section>
-   <footer>
-
-      <div class="text-center my-2">
-         <p>copy@ all reserved rights</p>
-      </div>
-   </footer>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
-   </script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-   <script src="./assets/js/script.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-      </script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-      </script>
-   <div class="accessibility_line"></div>
-   <div class="accessibly-app-reading-mask-top accessibly-app-reading-mask" style="height: 200px;"></div>
-   <div class="accessibly-app-reading-mask-bottom accessibly-app-reading-mask" style="height: 11px;"></div>
 </body>
-
 </html>
