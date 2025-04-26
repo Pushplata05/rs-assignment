@@ -9,58 +9,450 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
+   <!-- navbar started -->
+   <header class="nav-style mx-auto">
+      <div class="">
+         <div class="col-md-10 col-11 mx-auto">
+            <nav class="navbar navbar-expand-lg navbar-light" aria-controls="navbarSupportedContent"
+               aria-label="Toggle navigation">
+               <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Accessibility</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-link">
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                           <span class="accessibility-icon" href="" type="button"
+                              class="btn btn-modal d-flex justify-content-center">
+                              <iconify-icon icon="solar:accessibility-bold"></iconify-icon>
+                           </span>
+                        </li>
+                        <!-- Modal -->
+                        <div class="modal accessibility-modal fade" id="exampleModal" tabindex="-1"
+                           aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Accessibility</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                       aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="d-flex justify-content-between">
+                                       <div class="button-wrapper d-flex">
+                                          <button class="btn btn-primary modal-btn1 modal-btn">
+                                             <iconify-icon icon="tabler:zoom-in-filled"></iconify-icon>Bigger Text
+                                          </button>
+                                          <button class="btn btn-primary ms-4 modal-btn modal-btn2">
+                                             <iconify-icon icon="fontisto:cursor"></iconify-icon>Bigger Cursor
+                                          </button>
+                                          <button class="btn btn-primary ms-4 modal-btn modal-btn3">
+                                             <iconify-icon icon="ion:image-sharp"></iconify-icon>Hide-images
+                                          </button>
+                                          <button class="btn btn-primary ms-4 modal-btn reading-line">
+                                             <iconify-icon icon="fluent:line-horizontal-1-24-filled"></iconify-icon>
+                                             Reading
+                                             Line
+                                          </button>
+
+                                       </div>
+                                    </div>
+                                    <div class="d-flex mt-4 justify-content-between">
+                                       <div class="button-wrapper d-flex">
+                                          <button class="btn btn-primary modal-btn changefont">
+                                             <iconify-icon icon="fa-solid:font"></iconify-icon>Dyslexic Font
+                                          </button>
+                                          <button class="btn btn-primary ms-4 modal-btn brightness">
+                                             <iconify-icon icon="ic:baseline-brightness-6"></iconify-icon>Brightness
+                                          </button>
+                                          <button class="btn btn-primary ms-4 modal-btn invert">
+                                             <iconify-icon icon="mdi:invert-colors"></iconify-icon>Invert
+                                          </button>
+                                          <button class="btn btn-primary ms-4 modal-btn lineheight">
+                                             <iconify-icon icon="gg:format-line-height"></iconify-icon>Line-height
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex mt-4 justify-content-between">
+                                       <div class="button-wrapper d-flex">
+
+                                          <button class="btn btn-primary modal-btn contrast">
+                                             <iconify-icon icon="mdi:contrast-circle"></iconify-icon>Contrast
+                                          </button>
+
+                                          <button class="btn ms-4 btn-primary modal-btn saturation">
+                                             <iconify-icon icon="tdesign:s aturation"></iconify-icon>Saturation
+                                          </button>
+
+                                          <button class="btn ms-4 btn-primary modal-btn grayscale">
+                                             <iconify-icon icon="tdesign:saturation"></iconify-icon>Grayscale
+                                          </button>
+                                          <button class="btn ms-4 btn-primary modal-btn appreadingmask">
+                                             <iconify-icon icon="tdesign:saturation"></iconify-icon>app Reading mask
+                                          </button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <div class="button-wrapper d-flex">
+                                       <button type="button" class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Close</button>
+                                       <button type="button" class="btn btn-success reset-btn">Reset Settings</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+      </div>
+   </header>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="row d-flex align-items-center">
+               <div class="col-md-6  order-2 order-md-1">
+                  <h1 class="header_text">
+                     Web Accessibility
+                  </h1>
+                  <p>Web accessibility, or eAccessibility, is the inclusive practice of ensuring there are no barriers
+                     that prevent interaction with, or access to, websites on the World Wide Web by people with physical
+                     disabilities,</p>
 
 
- 
-  <header>
-    <h1>Mock Integration Demo</h1>
-    <p>Google Reviews • Instagram Feed • Play Store Badge</p>
-  </header>
+                  <div class="d-flex mt-4">
+                     <button class="hire_me"><i class="fas fa-check me-3"></i>Hire Me</button>
+                     <button class="about_me ms-3"><i class="fa fa-user me-3"></i>About me</button>
+                  </div>
+               </div>
+               <div class="col-md-6  order-1">
+                  <div class="image-wrapper">
+                     <img src="./assets/img/image 1.png" alt="web-assessbility on screen" class="img-fluid frame_resp">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- <-about-part-start> -->
+   <div class="container-fluid about_sec" id="about_id">
+      <div class="row">
+         <div class="col-11 col-md-12 mx-auto">
+            <div class="main_title">
+               <h1>About Me</h1>
+            </div>
+            <div class="row col-md-12">
+               <div class="col-md-5 col-11 d-flex justify-content-center 
+                     ">
+                  <img src="./assets/img/about4.png" alt="Who I am?" class="img-fluid frame_resp">
+               </div>
+               <div class="col-md-7 col-11 about_text d-flex justify-content-center align-items-start flex-column">
+                  <h2 class="mt-4">What I am</h2>
+                  <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                     websites, web services and online stores. My passion is to design digital user experiences through
+                     the bold interface and meaningful interactions.
+                  </p>
 
-  <section>
-    <h2>⭐ Google Reviews (Embed)</h2>
-    <div class="embed-wrapper">
-     <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-4ed87e61-59c4-4cc5-9b04-9111ef574bf7" data-elfsight-app-lazy></div>
-      <!-- Replace this URL with your own Google Reviews embed widget -->
-    </div>
-  </section>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- work exp -->
+   <!-- <div class="container-fluid expert_sec" id="about_id">
+         <div class="row">
+            <div class="col-11 col-md-12 mx-auto">
+               <div class="main_title">
+                  <h1>Work-Expertise</h1>
+                  <p class="text-center"> I am a passionate designer. I am a passionate designer. I am a passionate
+                     designer</p>
+         
+               </div>
+               <div class="row">
+         
+                  <div class="common_div col-md-7 col-11 about_text d-flex  align-items-start flex-column">
+                     <div class="w-100">
+                        <h2 class="expert_h1">Photoshop </h2>
+                        <div class="progress">
+                           <div class="progress-bar pb_1" role="progressbar"></div>
+                        </div>
+                     </div>
+                     <div class="w-100 my-5">
+                        <h2 class="expert_h2">Ilustrator </h2>
+                        <div class="progress">
+                           <div class="progress-bar pb_2" role="progressbar"></div>
+                        </div>
+                     </div>
+                     <div class="w-100 ">
+                        <h2 class="expert_h3">Branding </h2>
+                        <div class="progress">
+                           <div class="progress-bar pb_3" role="progressbar"></div>
+                        </div>
+                     </div>
+         
+         
+                  </div>
+                  <div class="col-md-5 col-11">
+                     <div class="float-md-right text-center common_div">
+                        <img src="./assets/img/Group 91.png" class="img-fluid frame_resp common_div ">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div> -->
+   <!-- <-our-services> -->
+   <div class="container-fluid ourservices" id="about_id">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="main_title">
+               <h1>Our-Services</h1>
+               <p class="text-center">Our-Services provide<span class="font-weight-bold">Quality</span></p>
+            </div>
+            <div class="row justify-content-around mt-5 gy-5">
+               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
+                  <div class="heart_at_bottom">
+                     <h1>1</h1>
+                     <ul>
+                        <li>
 
+                           <img src="./assets/img/circled-dot.png" alt="here is logo"
+                              class="img-fluid service_list_icon">Logo
+                        </li>
+                        <li>
 
-    
-   
-      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/b10c1ce0664158a1a3439018425bcfeb.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-      <section>
-        <h2>📸 Instagram Feed</h2>
-        <div class="insta-feed" style="display: flex; flex-wrap: nowrap; gap: 10px;">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DI3VT79hLCN/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DI3VT79hLCN/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DI3VT79hLCN/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by @priyaj6329</a></p></div></blockquote>
-<script async src="//www.instagram.com/embed.js"></script>
-          
-          <script async src="//www.instagram.com/embed.js"></script>
-        </div>
-      </section>
- 
-  </section>
+                           <img src="./assets/img/circled-dot.png" alt="here is Business card"
+                              class="img-fluid service_list_icon">Business
+                           card
+                        </li>
+                        <li>
 
-  <section class="playstore">
-    <h2>📱 Get Our App</h2>
-    <a href="https://play.google.com/store/apps/details?id=com.netway.phone.advice" target="_blank" rel="noopener">
-      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
-           alt="Get it on Google Play" 
-           width="200">
-    </a>
-    
-  </section>
+                           <img src="./assets/img/circled-dot.png" alt="here is Letterhand"
+                              class="img-fluid service_list_icon">Letterhead
+                        </li>
+                        <li>
 
-  <footer>
-    <p>&copy; 2025 MockSite Inc. | Built for Interview Test</p>
-  </footer>
-<!-- Elfsight Google Reviews Widget -->
+                           <img src="./assets/img/circled-dot.png" alt="here is Branding"
+                              class="img-fluid service_list_icon">Branding
 
+                        </li>
+                     </ul>
+                  </div>
+                  <i class="far fa-heart fa-4x"></i>
+               </div>
+               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
+                  <div class="heart_at_bottom">
+                     <h1>2</h1>
+                     <ul>
+                        <li>
 
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+                           <img src="./assets/img/circled-dot.png" alt="here is logo"
+                              class="img-fluid service_list_icon">Logo
+                        </li>
+                        <li>
 
+                           <img src="./assets/img/circled-dot.png" alt="here is Business card"
+                              class="img-fluid service_list_icon">Business
+                           card
+                        </li>
+                        <li>
+
+                           <img src="./assets/img/circled-dot.png" alt="here is Letterhand"
+                              class="img-fluid service_list_icon">Letterhead
+                        </li>
+                        <li>
+
+                           <img src="./assets/img/circled-dot.png" alt="here is Branding"
+                              class="img-fluid service_list_icon">Branding
+                           Stationary
+                        </li>
+                     </ul>
+                  </div>
+                  <i class="far fa-heart fa-4x"></i>
+               </div>
+               <div class="services_div col-xxl-3 col-lg-4 col-md-4 col-11">
+                  <div class="heart_at_bottom">
+                     <h1>3</h1>
+                     <ul>
+                        <li>
+
+                           <img src="./assets/img/circled-dot.png" alt="here is logo"
+                              class="img-fluid service_list_icon">Logo
+                        </li>
+                        <li>
+
+                           <img src="./assets/img/circled-dot.png" alt="here is Business card"
+                              class="img-fluid service_list_icon">Business
+                           card
+                        </li>
+                        <li>
+
+                           <img src="./assets/img/circled-dot.png" alt="here is Letterhand"
+                              class="img-fluid service_list_icon">Letterhead
+                        </li>
+                        <li>
+
+                           <img src="./assets/img/circled-dot.png" alt="here is Branding"
+                              class="img-fluid service_list_icon">Branding
+                           Stationary
+                        </li>
+                     </ul>
+                  </div>
+                  <i class="far fa-heart fa-4x"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- <-hire-me Section> -->
+   <!-- <div class="hireme_section container-fluid">
+         <div class="row">
+            <div class="col-md-10 col-11  mx-auto">
+               <h1>
+                  Hi Dear,
+               </h1>
+               <br />
+               <p>Design, Build & Grow your Business with Infostride
+                  Lorem ipsum dolor sit amet, consectetur adipiscingelit,
+               </p>
+               <br />
+             <div class="justify-content-center d-flex">
+               <button class="subscribe justify-content-center"><i class="fa fa-check"></i>Subscribe</button>
+             </div>
+              
+            </div>
+         </div>
+      </div> -->
+   <!-- <-contact-> -->
+   <div class="container-fluid contactme_sec " id="about_id">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="main_title">
+               <h1>Contact me</h1>
+               <p class="text-center">Feel free to<span class="font-weight-bold">Contact</span></p>
+            </div>
+            <div class="row  mt-5 gy-5 contact_resp">
+
+               <div class="col-md-6 col-10 contact_inner">
+                  <form>
+                     <fieldset>
+                        <legend>Add a comment</legend>
+                        <p class="instruction"><span class="required">Required fields</span> are in red and marked with
+                           an <span class="required">*</span></p>
+                        <div class="row">
+                           <label for="name5">Name</label>
+                           <input type="text" id="name5" name="name" value="Superbear" aria-label="visible">
+                        </div>
+                        <div class="row error">
+                           <label class="required" for="email5"> E-mail *</label>
+                           <input type="text" id="email5" aria-label="visible" name="email"
+                              value="superbear@@hq.example.com" aria-invalid="true">
+                        </div>
+                        <div class="row">
+                           <label for="website3">Website</label>
+                           <input type="text" id="website3" name="website">
+                        </div>
+                        <div class="row error">
+                           <label class="required" for="comment3"> Comment *</label>
+                           <textarea name="comment" id="comment3" aria-label="visible" aria-invalid="true"
+                              spellcheck="false"></textarea>
+                        </div>
+                     </fieldset>
+                  </form>
+               </div>
+               <div class="col-md-3 col-10 contact_img">
+                     <img src="./assets/img/call-center-concept-illustration_114360-2045.avif" alt="form-img" class="img-fluid">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- <---------------------contact enquery--------------->
+   <div class="container-fluid mt-5">
+      <div class="row">
+         <div class="col-11 col-md-10 mx-auto">
+            <div class="row justify-content-around">
+               <div
+                  class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
+                  <p><i class="fa fa-2x fa-envelope  text-dark" aria-hidden="hidden"></i></p>
+                  <br />
+                  <p class="fw-bold text-dark ">test@gmail.com</p>
+               </div>
+               <div
+                  class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
+                  <p><i class="fab fa-2x fa-whatsapp  text-dark" aria-hidden="hidden"></i></p>
+                  <br />
+                  <p class="fw-bold text-dark">+91 121212 21212</p>
+               </div>
+               <div
+                  class="col-lg-3 col-md-3 col-10 d-flex align-items-center flex-column justify-content-center contact_share_div">
+                  <p><i class="fa 2px fa-map-marker  text-dark" aria-hidden="hidden"></i></p>
+                  <br />
+                  <p class="fw-bold text-dark ">City</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <section class="my-5">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-lg-1 col-2 socialsites_links">
+               <i class="fab fa-facebook-f fa-2x" aria-hidden="hidden"></i>
+            </div>
+            <div class="col-lg-1 col-2 socialsites_links">
+               <i class="fab fa-2x fa-instagram" aria-hidden="hidden"></i>
+            </div>
+            <div class="col-lg-1 col-2 socialsites_links">
+               <i class="fab fa-2x fa-pinterest" aria-hidden="hidden"></i>
+            </div>
+            <div class="col-lg-1 col-2 socialsites_links">
+               <i class="fab fa-2x fa-behance" aria-hidden="hidden"></i>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer>
+
+      <div class="text-center my-2">
+         <p>copy@ all reserved rights</p>
+      </div>
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+   </script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src="./assets/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+      </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+      </script>
+   <div class="accessibility_line"></div>
+   <div class="accessibly-app-reading-mask-top accessibly-app-reading-mask" style="height: 200px;"></div>
+   <div class="accessibly-app-reading-mask-bottom accessibly-app-reading-mask" style="height: 11px;"></div>
 </body>
 </html>
