@@ -1,0 +1,968 @@
+<!-- Carousel wrapper -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/cart.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  </head>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-center header-row1"><span>SUMMER SALE FOR ALL SWIM SUITS AND FREE
+            EXPRESS INTERNATIONAL DELIVERY - OFF 50%! <b class="ms-1">SHOP
+              NOW</b></span>
+        </div>
+        <div class="container header-row2">
+          <div class="row">
+            <div class="d-flex bd-highlight header-msg">
+              <div class="me-auto p-2 bd-highlight">Free Shipping World wide for all orders over $199.<span
+                  class="red ms-1">Click and Shop now</span> </div>
+              <div class="p-2 bd-highlight">Order-tracking</div>
+              <div class="p-2 bd-highlight">
+                <div class="dropdown">
+                  <span class=" dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    English
+                  </span>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    <li><a class="dropdown-item" href="#">Europe</a></li>
+    
+    
+                  </ul>
+                </div>
+              </div>
+              <div class="p-2 bd-highlight">
+                <div class="dropdown">
+                  <span class=" dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    USD
+                  </span>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar nav border-top navbar-expand-lg  py-3 bg-light ">
+            <div class="container">
+              <a class="navbar-brand" href=index.html><img src="./assets/images/infologo 1.png" class="logo me-4" alt=""
+                  srcset=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item me-4">
+                    <a class="nav-link active" aria-current="page" href=index.html>Home</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Women</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Men</a>
+                  </li>
+                  <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Shop pages</a></li>
+                      <li><a class="dropdown-item" href="#">Shop list</a></li>
+                      <li><a class="dropdown-item" href="#">Shop Wide</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Filter area</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item me-4">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                  </li>
+                </ul>
+      
+                <div class="d-flex position-relative nav-icons">
+                  <iconify-icon icon="teenyicons:user-outline" class="icon-size">
+      
+                  </iconify-icon>
+                  <iconify-icon icon="bi:search" class="icon-size"></iconify-icon>
+      
+                  <div class="box">
+                    <div class="cart-count">0</div>
+                    <iconify-icon icon="teenyicons:cart-outline" id="cart-icon" class="icon-size"></iconify-icon>
+                 
+                </div>
+    
+                <div class="cart">
+                    <div class="cart-title">Cart Items</div>
+                    <div class="cart-content">
+                        <!--
+              <div class="cart-box">
+                <img src="images/97.jpg" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-food-title">Special Dosai</div>
+                  <div class="price-box">
+                    <div class="cart-price">Rs.72</div>
+                     <div class="cart-amt">Rs.72</div>
+                 </div>
+                  <input type="number" value="1" class="cart-quantity">
+                </div>
+                <ion-icon name="trash" class="cart-remove"></ion-icon>
+              </div>
+    
+              <div class="cart-box">
+                <img src="images/97.jpg" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-food-title">Special Dosai</div>
+                  <div class="price-box">
+                    <div class="cart-price">Rs.72</div>
+                     <div class="cart-amt">Rs.72</div>
+                 </div>
+                  <input type="number" value="1" class="cart-quantity">
+                </div>
+                <ion-icon name="trash" class="cart-remove"></ion-icon>
+              </div>
+            -->
+                    </div>
+    <div class="col-md-12 row my-5">
+      <div class="col-md-8">
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">Rs.0</div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+
+                 
+                    <button class="btn-buy">Place Order</button>
+    
+                    <ion-icon name="close" id="cart-close"></ion-icon>
+    
+                </div> </div>
+                  <div class="icon-size position-relative tray">
+                    
+                   
+                  </div>
+      
+                </div>
+      
+                </div>
+              </div>
+            </div>
+          </nav>
+      
+
+    </header>
+
+
+    <section class="product-one">
+        <div class="container pb-5 ">
+          <div class=" col-md-12">
+            <div class="row">
+            <div class="my-3 product-nav">Home/Women/Pants/<span class="text-dark">Basic Colored Sweatpants With Elastic
+                Hems</span></div>
+            <div class="col-md-6 food-box">
+              <!-- Carousel wrapper -->
+              <div id="carouselMDExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+                <!-- Slides -->
+                <div class="carousel-inner mb-5 shadow-1-strong rounded-3">
+                  <div class="carousel-item active pic">
+                    <img src="./assets/images/Product-1/pants1.jpeg" class="d-block h-50 w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/Product-1/pants2.jpeg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/Product-1/pants3.jpeg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/Product-1/pants4.jpeg" class="d-block w-100" alt="..." />
+                  </div>
+    
+                </div>
+                <!-- Slides -->
+    
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselMDExample"
+                  data-mdb-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselMDExample"
+                  data-mdb-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Controls -->
+    
+                <!-- Thumbnails -->
+                <div class="carousel-indicators" style="margin-bottom: -20px;">
+                  <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1" style="width: 100px;">
+                    <img class="d-block w-100 shadow-1-strong rounded" src="./assets/images/Product-1/pants1-150x150.jpeg"
+                      class="img-fluid" />
+                  </button>
+                  <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="1" aria-label="Slide 2"
+                    style="width: 100px;">
+                    <img class="d-block w-100 shadow-1-strong rounded" src="./assets/images/Product-1/pants2-150x150.jpeg"
+                      class="img-fluid" />
+                  </button>
+                  <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="2" aria-label="Slide 3"
+                    style="width: 100px;">
+                    <img class="d-block w-100 shadow-1-strong rounded" src="./assets/images/Product-1/pants3-150x150.jpeg"
+                      class="img-fluid" />
+                  </button>
+                  <button type="button" data-mdb-target="#carouselMDExample" data-mdb-slide-to="2" aria-label="Slide 3"
+                    style="width: 100px;">
+                    <img class="d-block w-100 shadow-1-strong rounded" src="./assets/images/Product-1/pants4-150x150.jpeg"
+                      class="img-fluid" />
+                  </button>
+    
+                </div>
+                <!-- Thumbnails -->
+              </div>
+            </div>
+            <div class="col-md-6 shop-content">
+              <div class="product-text">
+    
+                <h2 class="banner-title">Best Sweatshirts and tracksuits for everyone!</h2>
+                <div class="product-swatches">
+                  <div class="product-review">
+                    <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon>
+                      <iconify-icon icon="ic:baseline-star"></iconify-icon>
+                      <iconify-icon icon="ic:baseline-star"></iconify-icon>
+                      <iconify-icon icon="ic:baseline-star"></iconify-icon>
+                    </span><!-- star --><span class="review">1 review</span>
+                  </div>
+                  <div class="product-title my-1">
+                    Pouch Pocket Hoodie Orange
+                  </div><!-- product-review -->
+
+                  <span class="price"><del aria-hidden="true"><span class="amount"><bdi><span
+                            class="currencySymbol">$</span>65</bdi></span></del> <ins><span
+                        class="pice-amount"><bdi><span class="price-currencySymbol">$</span>65</bdi></span></ins></span>
+                </div>
+                <p class="product-description pt-3 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+                </p>
+                <div class="color pb-3">
+                  <div class="color-heading">Color</div>
+                  <div class="circle-black circle">
+                  </div>
+                  <div class="circle-red circle">
+                  </div>
+                  <div class="circle-blue circle">
+                  </div>
+                  <div class="circle-yellow circle">
+                  </div>
+                  <div class="circle-green circle">
+                  </div>
+                  <div class="circle-pink circle">
+                  </div>
+    
+                  <div class="circle-gray circle">
+                  </div>
+                  <div class="circle-purple circle">
+                  </div>
+                </div>
+    
+                <div class="sizes">
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      Size:XXL</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      Size:XL
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Size:L
+                    </div>
+    
+                    <div class="tab-pane fade" id="pills-m" role="tabpanel" aria-labelledby="pills-m-tab">
+                      Size:M</div>
+    
+    
+                    <div class="tab-pane fade" id="pills-xxs" role="tabpanel" aria-labelledby="pills-xxs-tab">
+                      Size:XXS</div>
+                    <div class="tab-pane fade" id="pills-xs" role="tabpanel" aria-labelledby="pills-xs-tab">
+                      Size:XS</div>
+                    <div class="tab-pane fade" id="pills-s" role="tabpanel" aria-labelledby="pills-s-tab">
+                      Size:S</div>
+                  </div>
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item nav-pills ps-2" role="presentation">
+                      <button class="nav-link active nav-pills " id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">XXL</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">XL</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">L</button>
+                    </li>
+    
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-m-tab" data-bs-toggle="pill" data-bs-target="#pills-m"
+                        type="button" role="tab" aria-controls="pills-m" aria-selected="true">M</button>
+                    </li>
+    
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-xxs-tab" data-bs-toggle="pill" data-bs-target="#pills-xxs"
+                        type="button" role="tab" aria-controls="pills-xxs" aria-selected="true">XXS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-xs-tab" data-bs-toggle="pill" data-bs-target="#pills-xs"
+                        type="button" role="tab" aria-controls="pills-xs" aria-selected="true">XS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-s-tab" data-bs-toggle="pill" data-bs-target="#pills-s"
+                        type="button" role="tab" aria-controls="pills-s" aria-selected="true">S</button>
+                    </li>
+                  </ul>
+    
+                </div>
+                <h5 class="offer-time">
+                  Offer end in:
+                </h5>
+    
+                <div class="product-countdown">
+                  <p id="countdown" class="product-time p-0 m-0"></p>
+    
+                </div>
+    
+              </div>
+              <div class="pt-4 sold">
+                <span class="text-muted"> Available: 80 - Sold:</span><span class="red">54</span>
+              </div>
+             
+    
+              <div class="quantity row col-md-12">
+    
+                <div class="col-md-4 mt-2">
+                
+                    <div class="stock">
+    
+    
+                      <a href="#" class="btn text-success">Stock</a>
+                    </div>
+                
+                </div>
+                <div class="col-md-8 mt-2 items">
+                    <div class="food-box">
+                        <div class="pic"><img class="food-img d-none" src="./assets/images/Product-1/pants1.jpeg"></span></div>
+                        <h2 class="food-title">Item<span class="food-price d-none">Rs.65</span></h2>
+                       
+                        <ion-icon name="cart" class="add-cart"></ion-icon>
+                    </div>
+        
+                </div>
+              </div>
+    
+    
+    
+    
+          
+    
+    
+    
+    
+    
+    
+    
+    
+              <div class="row py-3 border-bottom  add-whislist">
+    
+                <span>
+                  <span class="me-2"> <iconify-icon icon="tabler:world-star"></iconify-icon><span class="ms-2">Size Guide
+                    </span></span>
+                  <span class=" me-2"> <iconify-icon icon="teenyicons:heart-outline"></iconify-icon><span class="ms-2">Add to
+                      Wishlist</span></span>
+                  <span class="me-2"> <iconify-icon icon="lucide:share"></iconify-icon><span class="ms-2">Share this Product
+                    </span></span></span>
+              </div>
+              <div class="row py-3 px-2">
+                <span class="me-2 px-0"> <span class="half-1"> SKU: </span><span class="ms-2 prod-size">A3M547
+                  </span></span>
+                <span class="me-2 px-0 text-muted"> <span class="half-1"> Categories: </span> <span
+                    class="ms-2 prod-option">BLOUSES & SHIRTS, DRESSES, KNIT, SKIRTS, T-SHIRTS, WOMEN </span></span>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="description my-5">
+
+        <div class="container">
+          <div class="row col-md-12">
+            <nav>
+              <div class="nav nav-tabs py-3 border-bottom" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Additional information</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews (2)</button>
+    
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <p class="pt-3">Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui
+                  finibus
+                  malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum
+                  iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis.
+                  Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse
+                  velit
+                  ex, aliquet vel ornare vel, dignissim a tortor.</p>
+                <p>
+                  Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque.
+                  Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor.
+                  Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus
+                  ligula.
+                  Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus
+                  faucibus,
+                  ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus.
+                  Duis semper erat mauris, sed egestas purus commodo vel.</p>
+              </div>
+              <div class="tab-pane fade  pt-4" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                tabindex="0">
+                <table style="width:100%" class="pt-3">
+                  <tr>
+                    <th class="col-md-2 p-2">Color</th>
+                    <td class="col-md-10 ps-2">Apple Red, Bio Blue, Sweet Orange, Blue, Green, Pink, Black, White</td>
+    
+                  </tr>
+                  <tr>
+                    <th class="col-md-2 p-2">Size</th>
+                    <td class="col-md-10 ps-2">XXS, XS, S, M, L, XL, XXL</td>
+    
+                  </tr>
+                  <tr>
+    
+                  </tr>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                <h3 class="py-3">2 reviews for Basic Colored Sweatpants With Elastic Hems</h3>
+                <div class="card col-md-8 mb-3">
+                  <div class="row  g-0">
+                    <div class="col-md-1 m-2">
+                      <img src="./assets/images/Product-1/card-side-img.png" class="img-fluid rounded-circle" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="card-body py-0">
+                        <div class="rating-block">
+                          <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon>
+                            <iconify-icon icon="ic:baseline-star"></iconify-icon>
+                            <iconify-icon icon="ic:baseline-star"></iconify-icon>
+                            <iconify-icon icon="ic:baseline-star"></iconify-icon>
+                            <iconify-icon icon="ic:baseline-star"></iconify-icon>
+                          </span><!-- star -->
+                        </div>
+                        <h2 class="card-title">admin<span class="date ms-4">25 Apr 2022</span></h2>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.</p>
+    
+                      </div>
+    
+                    </div>
+    
+                  </div>
+                </div>
+                <div class="review-form">
+                  <div class="py-3 review-heading">
+                    Add a review
+                  </div>
+                  <span>Your email address will not be published. Required fields are marked *</span>
+                  <div class="sub-head mt-2">Your rating *</div>
+                  <div class="your-rating-block">
+                    <span class="outline-star pe-2 border-end">
+                      <iconify-icon icon="ph:star"></iconify-icon>
+    
+                    </span>
+    
+                    <span class="outline-star pe-2 border-end">
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+    
+                    </span>
+                    <span class="outline-star pe-2 border-end">
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+    
+                    </span>
+                    <span class="outline-star pe-2 border-end">
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                    </span>
+                    <span class="outline-star pe-2 border-end">
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                      <iconify-icon icon="ph:star"></iconify-icon>
+                    </span>
+    
+    
+                    <div class="sub-head">
+                      Your review *
+                    </div>
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                      <label for="floatingTextarea2"></label>
+                    </div>
+    
+                    <div class="feedback-form">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Name *</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Email *</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check d-flex align-items-center">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label sub-head pt-1" for="exampleCheck1">Save my name, email, and website
+                            in this browser for the next time I comment.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+  <section class="featured pt-5 mt-3">
+    <div class="container">
+      <div class="row col-md-12 border-bottom">
+        <div class="col-md-4">
+          <h3>
+            Related products
+          </h3>
+
+        </div>
+        <div class="col-md-8">
+
+        </div>
+      </div>
+      <div class="row my-5 pb-5">
+        <div class="owl-carousel owl-theme">
+
+          <div class="content me-3">
+
+
+            <div class="item image_item">
+              <div class="lable-percentage">
+                23%
+              </div>
+              <a href=product1.html>
+                <div class="figure">
+
+                  <img class="Sirv image-main" src="./assets/images/slider-2/sleeve1-500x750.jpg"
+                    data-src="./assets/images/slider-2/sleeve1-500x750.jpg">
+                  <img class="Sirv image-hover" data-src="./assets/images/slider-2/sleeve2.jpg">
+                  <div class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-compress"></i>
+                    <i class="fa-solid fa-rotate"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </div>
+
+                </div>
+              </a>
+
+              <!-- <div class="product-countdown">
+                <p id="countdown" class="product-time p-0 m-0"></p>
+
+              </div> -->
+
+            </div>
+            <div class="product-swatches">
+              <div class="">
+                <div class="pic"><img class="food-img d-none" src="./assets/images/slider-2/sleeve1-500x750.jpg"></div>
+                <h2 class="food-title d-none">Item <span class="food-price d-none">Rs.84.50</span></h2>
+
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+              <div class="product-review">
+                <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon>
+                </span><!-- star --><span class="review">1 review</span>
+              </div>
+              <div class="product-title my-1">
+                Pouch Pocket Hoodie Orange
+              </div><!-- product-review -->
+              <span class="price"><del aria-hidden="true"><span class="amount"><bdi><span
+                        class="currencySymbol">$</span>37.50</bdi></span></del> <ins><span
+                    class="pice-amount"><bdi><span class="price-currencySymbol">$</span>84.50</bdi></span></ins></span>
+            </div>
+
+          </div>
+
+          
+          <div class="content me-3">
+            <div class="item image_item">
+              <div class="lable-percentage">
+                23%
+              </div>
+              <div class="figure">
+
+                <img class="Sirv image-main" src="./assets/images/slider-2/zipped2-500x750.jpeg"
+                  data-src="./assets/images/slider-2/zipped2-500x750.jpeg">
+                <img class="Sirv image-hover" data-src="./assets/images/slider-2/zipped1-1.jpeg">
+                <div class="icons">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-compress"></i>
+                  <i class="fa-solid fa-rotate"></i>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+              <!-- 
+              <div class="product-countdown">
+                <p id="countdown1" class="product-time p-0 m-0"></p>
+
+              </div> -->
+            </div>
+            <div class="product-swatches">
+              <div class="">
+                <div class="pic"><img class="food-img d-none" src="./assets/images/slider-2/zipped2-500x750.jpeg"></div>
+                <h2 class="food-title d-none">Item <span class="food-price d-none">Rs.29.50</span></h2>
+
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+
+              <div class="product-review">
+                <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon></span><!-- star --><span
+                  class="review">1 review</span>
+              </div>
+              <div class="product-title my-1">
+                Pouch Pocket Hoodie Orange
+              </div><!-- product-review -->
+              <span class="price"><del aria-hidden="true"><span class="amount"><bdi><span
+                        class="currencySymbol">$</span>37.50</bdi></span></del> <ins><span
+                    class="pice-amount"><bdi><span class="price-currencySymbol">$</span>29.50</bdi></span></ins></span>
+            </div>
+          </div>
+          <div class="content me-3">
+            <div class="item image_item">
+              <div class="lable-percentage">
+                23%
+              </div>
+              <div class="figure">
+
+                <img class="Sirv image-main" src="./assets/images/slider-2/nylon1-500x750.jpg"
+                  data-src="./assets/images/slider-2/nylon1-500x750.jpg">
+                <img class="Sirv image-hover" data-src="./assets/images/slider-2/nylon2.jpg">
+                <div class="icons">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-compress"></i>
+                  <i class="fa-solid fa-rotate"></i>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+              <!-- 
+              <div class="product-countdown">
+                <p id="countdown2" class="product-time p-0 m-0"></p>
+
+              </div> -->
+            </div>
+            <div class="product-swatches">
+              
+              <div class="">
+                <div class="pic"><img class="food-img d-none" src="./assets/images/slider-2/nylon1-500x750.jpg"></div>
+                <h2 class="food-title d-none">Item <span class="food-price d-none">Rs.99.50</span></h2>
+
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+
+              <div class="product-review">
+                <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon></span><!-- star --><span
+                  class="review">1 review</span>
+              </div>
+              <div class="product-title my-1">
+                Pouch Pocket Hoodie Orange
+              </div><!-- product-review -->
+              <span class="price"><del aria-hidden="true"><span class="amount"><bdi><span
+                        class="currencySymbol">$</span>37.50</bdi></span></del> <ins><span
+                    class="pice-amount"><bdi><span class="price-currencySymbol">$</span>99.50</bdi></span></ins></span>
+            </div>
+          </div>
+          <div class="content me-3">
+            <div class="item image_item">
+              <div class="lable-percentage">
+                23%
+              </div>
+              <div class="figure">
+
+                <img class="Sirv image-main" src="./assets/images/slider-2/pocketmen1-500x750.jpeg"
+                  data-src="./assets/images/slider-2/pocketmen1-500x750.jpeg">
+                <img class="Sirv image-hover" data-src="./assets/images/slider-2/pocketmen2.jpeg">
+                <div class="icons">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-compress"></i>
+                  <i class="fa-solid fa-rotate"></i>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+
+              <!-- <div class="product-countdown">
+                <p id="countdown3" class="product-time p-0 m-0"></p>
+
+              </div> -->
+            </div>
+            <div class="product-swatches">
+              
+              <div class="">
+                <div class="pic"><img class="food-img d-none" src="./assets/images/slider-2/sleeve1-500x750.jpg"></div> 
+                <h2 class="food-title d-none">Item <span class="food-price d-none">Rs.54.50</span></h2>
+
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+
+              <div class="product-review">
+                <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon></span><!-- star --><span
+                  class="review">1 review</span>
+              </div>
+              <div class="product-title my-1">
+                Pouch Pocket Hoodie Orange
+              </div><!-- product-review -->
+              <span class="price"><del aria-hidden="true"><span class="amount"><bdi><span
+                        class="currencySymbol">$</span>37.50</bdi></span></del> <ins><span
+                    class="pice-amount"><bdi><span class="price-currencySymbol">$</span>54.50</bdi></span></ins></span>
+            </div>
+
+          </div>
+          <div class="content me-3">
+            <div class="item image_item">
+              <div class="lable-percentage">
+                23%
+              </div>
+              <div class="figure">
+
+                <img class="Sirv image-main" src="./assets/images/slider-2/starter1-500x750.jpeg"
+                  data-src="./assets/images/slider-2/starter1-500x750.jpeg">
+                <img class="Sirv image-hover" data-src="./assets/images/slider-2/starter2.jpeg">
+                <div class="icons">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-compress"></i>
+                  <i class="fa-solid fa-rotate"></i>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+
+              <!-- <div class="product-countdown">
+                <p id="countdown4" class="product-time p-0 m-0"></p>
+
+              </div> -->
+            </div>
+            <div class="product-swatches">
+              <div class="">
+                <div class="pic"><img class="food-img d-none" src="./assets/images/slider-2/starter1-500x750.jpeg"></div> 
+                <h2 class="food-title d-none">Item <span class="food-price d-none">Rs.54.50</span></h2>
+
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+
+              <div class="product-review">
+                <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon></span><!-- star --><span
+                  class="review">1 review</span>
+              </div>
+              <div class="product-title my-1">
+                Pouch Pocket Hoodie Orange
+              </div><!-- product-review -->
+              <span class="price"><del aria-hidden="true"><span class="amount"><bdi><span
+                        class="currencySymbol">$</span>37.50</bdi></span></del> <ins><span
+                    class="pice-amount"><bdi><span class="price-currencySymbol">$</span>56.80</bdi></span></ins></span>
+            </div>
+          </div>
+          <div class="content me-3">
+            <div class="item image_item">
+              <div class="lable-percentage">
+                23%
+              </div>
+              <div class="figure">
+
+                <img class="Sirv image-main" src="./assets/images/slider-2/dress1.jpg"
+                  data-src="./assets/images/slider-2/dress1.jpg">
+                <img class="Sirv image-hover" data-src="./assets/images/slider-2/dress4.jpg">
+                <div class="icons">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-compress"></i>
+                  <i class="fa-solid fa-rotate"></i>
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+              </div>
+
+              <!-- <div class="product-countdown">
+                <p id="countdown5" class="product-time p-0 m-0"></p>
+
+              </div> -->
+            </div>
+            <div class="product-swatches">
+              <div class="">
+                <div class="pic"><img class="food-img d-none" src="./assets/images/slider-2/dress1.jpg"></div> 
+                <h2 class="food-title d-none">Item <span class="food-price d-none">Rs.54.50</span></h2>
+
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+
+              <div class="product-review">
+                <span class="star"><iconify-icon icon="ic:baseline-star"></iconify-icon></span><!-- star --><span
+                  class="review">1 review</span>
+              </div>
+              <div class="product-title my-1">
+                Pouch Pocket Hoodie Orange
+              </div><!-- product-review -->
+              <span class="price"><del aria-hidden="true"><span class="amount"><bdi><span
+                        class="currencySymbol">$</span>37.50</bdi></span></del> <ins><span
+                    class="pice-amount"><bdi><span class="price-currencySymbol">$</span>48.50</bdi></span></ins></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+   
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/util.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js"
+      integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+  
+      <script src="./assets/js/script.js"></script>
+ 
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>  $(".navbar-toggler").on("click", function() {
+      $(".navbar-collapse").toggle();
+      
+  });</script>
+    <script>
+       
+      function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+      }
+  
+      function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? value = 1 : '';
+        value--;
+        document.getElementById('number').value = value;
+      }
+  
+    </script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+  
+        dots: true,
+        nav: true,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 4
+          }
+        }
+      })
+    </script>
+</body>
+
+</html>

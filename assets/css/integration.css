@@ -1,0 +1,39 @@
+.playstore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+.product-title {
+    font-size: 14px;
+}
+
+.mask .collage .btn-shop {
+    font-size: 1rem;
+    height: auto;
+    padding: 11px 16px;
+    background-color: #4943434d;
+    border: 0;
+    color: currentColor;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--color-form-border);
+}
+
+.mask .collage .btn-shop:hover {
+    font-size: 1rem;
+    height: auto;
+    padding: 11px 16px;
+    background-color: transparent;
+    border: 0;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--color-form-border);
+}
