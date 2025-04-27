@@ -33,9 +33,9 @@
     margin: 12px 0px !important;
 }
 
-section.google-reviews {
+/* section.google-reviews {
     background: linear-gradient(180deg, #f7fbff 19.03%, #4699f117 100%);
-}
+} */
 div.google-reviews {
     display: flex;
     flex-direction: column;
@@ -166,12 +166,7 @@ div.google-reviews {
         cursor: pointer;
         border: 1px solid var(--color-form-border);
     }
-    .slider.slider {
-        margin-top: 0;
-        height: auto;
-        background-color: transparent;
-        padding: 0;
-    }
+   
 }
 
 
