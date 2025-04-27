@@ -102,7 +102,7 @@ var menuObject = {
     menuObject.bigger_cursor = show;
     if (menuObject.bigger_cursor) {
       // $(".modal-btn2").text("Default Cursor");
-      $("body").css("cursor", "url('assets/img/cursor (1).png'), auto");
+      $("body").css("cursor", "url('assets/images/cursor (1).png'), auto");
     } else {
       // $(".modal-btn2").text("Bigger Cursor");
       $("body").css("cursor", "auto");
