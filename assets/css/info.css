@@ -568,22 +568,22 @@ html {
 }
 
 .scrlBotm {
-	position: fixed;
-	left: auto;
-	top: auto;
-	z-index: 3;
-	cursor: pointer;
-	margin-left: -15px;
-	border: 2px solid #fff;
-	border-radius: 50px;
-	padding: 5px 20px;
-	color: #fff;
-	transform: rotate(90deg);
-	right: 8%;
-	bottom: 200px;
-	text-decoration: none;
-	display: flex;
-	align-items: center;
+    position: fixed;
+    left: auto;
+    top: auto;
+    z-index: 3;
+    cursor: pointer;
+    margin-left: -15px;
+    border: 1.5px solid #817a7a;
+    border-radius: 50px;
+    padding: 5px 20px;
+    color: #131111;
+    transform: rotate(90deg);
+    right: 8%;
+    bottom: 200px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .scrlBotm span {
@@ -592,9 +592,11 @@ html {
 	line-height: 36px;
 	letter-spacing: 0em;
 	text-align: center;
+	color: #131111;
 }
 
 .scrlBotm iconify-icon {
+	color: #131111;
 	font-size: 24px;
 	margin: 0px 0px 0px 8px;
 	-moz-animation: slideInLeft 2s infinite;
