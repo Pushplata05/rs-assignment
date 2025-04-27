@@ -16,7 +16,7 @@
 
 body,
 button {
-	font-family: "Inter", sans-serif !important;
+	/* font-family: "Inter", sans-serif !important; */
 }
 
 [type="submit"],
@@ -769,7 +769,7 @@ html {
 }
 
 .slider {
-	margin-top: -90px;
+	margin-top: -50px;
 	position: relative;
 	overflow: hidden;
 	height: 100%;
@@ -1060,14 +1060,14 @@ html {
 	color: var(--bs-darkblue);
 }
 
-p {
+/* p {
 	color: var(--bs-gray);
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
 	letter-spacing: 0em;
 	text-align: left;
-}
+} */
 
 .second-slide .row div[class*="col-"] .row div[class*="col-"] {
 	padding-right: 40px;
@@ -1473,6 +1473,7 @@ header.dark .contact-info .explore-btn .btn-primary:focus {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	height: 100%;
 }
 
 .third-slide video {
@@ -14743,10 +14744,8 @@ a.apply-btn iconify-icon {
 	margin-left: -12px;
 	margin-right: -12px;
 }
-
-.slider-behindthe-scene .slide .carousel-control-prev,
-.slide .carousel-control-next {
-	display: block;
+.slider-behindthe-scene .slide .carousel-control-prev, .slide .carousel-control-next {
+    display: none;
 }
 
 .slider-behindthe-scene .carousel-indicators {
