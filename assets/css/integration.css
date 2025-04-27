@@ -113,7 +113,7 @@ div.google-reviews {
     transform: rotate(90deg);
   }
   .accessbility-logo iconify-icon {
-    font-size: 40px;
+    font-size: 34px;
     color: #ffffff;
 }
   /* when .rotated is added, icon flips 180° (now pointing up) */
