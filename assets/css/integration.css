@@ -166,12 +166,7 @@ div.google-reviews {
         cursor: pointer;
         border: 1px solid var(--color-form-border);
     }
-    .slider.slider {
-        margin-top: 0;
-        height: auto;
-        background-color: transparent;
-        padding: 0;
-    }
+   
 }
 
 
