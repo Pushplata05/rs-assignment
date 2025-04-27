@@ -107,6 +107,20 @@ div.google-reviews {
 .video-content h3 {
     color: white;
 }
+.scrlToggle iconify-icon {
+    transition: transform 0.3s ease;
+    /* start pointing down (0deg) */
+    transform: rotate(90deg);
+  }
+  .accessbility-logo iconify-icon {
+    font-size: 40px;
+    color: #ffffff;
+}
+  /* when .rotated is added, icon flips 180° (now pointing up) */
+  .scrlToggle.rotated iconify-icon {
+    transform: rotate(180deg);
+  }
+  
   /* Responsive */
   @media (max-width: 992px) {
     section.slider {

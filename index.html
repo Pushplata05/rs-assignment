@@ -122,7 +122,8 @@
                         </span>
                      </div>
                      <button type="button" class="btn btn-primary border-0 btn-getstarted scrollto accessbility-logo" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                     <i class="fa-brands fa-accessible-icon accessibile-icon"></i>
+                    
+         <iconify-icon icon="solar:accessibility-broken"></iconify-icon>
                      </button>
                   </div>
                </div>
@@ -163,9 +164,12 @@
          </div>
          </div>
       </header>
-      <!-- <a href="javascript:void(0)" class="scrlBotm"><span>Scroll</span>
+      <a href="javascript:void(0)" class="scrlToggle scrlBotm">
+         <span>Scroll</span>
          <iconify-icon icon="fluent:arrow-circle-right-48-regular"></iconify-icon>
-         </a> -->
+         
+       </a>
+       
       <main>
          <section class="slider">
             <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -1062,6 +1066,27 @@
            }
          })
       </script>
+      <script>
+       document.addEventListener('DOMContentLoaded', () => {
+  const btn  = document.querySelector('.scrlToggle');
+  const icon = btn.querySelector('iconify-icon');
+
+  btn.addEventListener('click', () => {
+    const atTop = window.pageYOffset === 0;
+    const target = atTop
+      ? document.documentElement.scrollHeight  // scroll down
+      : 0;                                      // scroll up
+
+    window.scrollTo({ top: target, behavior: 'smooth' });
+
+    // toggle the rotation class
+    btn.classList.toggle('rotated', atTop);
+  });
+});
+
+
+
+       </script>
       
    </body>
 </html>
